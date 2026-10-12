@@ -1,0 +1,179 @@
+{
+ "configs": {
+  "global-endpoint": {
+   "invocation": {
+    "faults": {
+     "mode": "global-endpoint",
+     "n": 90,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "unsafe": false
+    },
+    "scenarios": {
+     "mode": "global-endpoint",
+     "only": null,
+     "repeats": 3,
+     "unsafe": false
+    }
+   },
+   "sha256_fault_schedule_seed,dialog,fault": "22fd23dd8660e4e70f9323762c378e55cf4a66352823322fc628ccdc0822fbf1",
+   "sha256_input_bundle": "a50df3f24060220eb5724a8a09b41f09ab15d6a12933fec6a84997ca94794c97",
+   "sha256_invocation_json": "1ac3ae8d2215e606bc1ebf5e0c0273bdf816757a548f8d789f706855155a85f5"
+  },
+  "global-store": {
+   "invocation": {
+    "faults": {
+     "mode": "global-store",
+     "n": 90,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "unsafe": false
+    },
+    "scenarios": {
+     "mode": "global-store",
+     "only": null,
+     "repeats": 3,
+     "unsafe": false
+    }
+   },
+   "sha256_fault_schedule_seed,dialog,fault": "22fd23dd8660e4e70f9323762c378e55cf4a66352823322fc628ccdc0822fbf1",
+   "sha256_input_bundle": "fa9b88b0adfb24b7980566ef7af18c321daf8d47437746394e3c37ea6b80d286",
+   "sha256_invocation_json": "a5d40cadc233bcaed0187f1a5479deb197cc6c043b1444e951eb6944221b3dce"
+  },
+  "scoped-endpoint-medticket": {
+   "invocation": {
+    "faults": {
+     "mode": "scoped-endpoint-medticket",
+     "n": 90,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "unsafe": false
+    },
+    "scenarios": {
+     "mode": "scoped-endpoint-medticket",
+     "only": null,
+     "repeats": 3,
+     "unsafe": false
+    }
+   },
+   "sha256_fault_schedule_seed,dialog,fault": "22fd23dd8660e4e70f9323762c378e55cf4a66352823322fc628ccdc0822fbf1",
+   "sha256_input_bundle": "70e7543be08b996641ee90ec21cadb8a6afb5271c3a66bd20fee7bf8995ea3ea",
+   "sha256_invocation_json": "ab760b5250c9a8d2e2a7e1973b45b09901de1d48a45062e2cb0335a6c25620f0"
+  },
+  "scoped-endpoint-noticket": {
+   "invocation": {
+    "faults": {
+     "mode": "scoped-endpoint-noticket",
+     "n": 90,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "unsafe": false
+    },
+    "scenarios": {
+     "mode": "scoped-endpoint-noticket",
+     "only": null,
+     "repeats": 3,
+     "unsafe": false
+    }
+   },
+   "sha256_fault_schedule_seed,dialog,fault": "22fd23dd8660e4e70f9323762c378e55cf4a66352823322fc628ccdc0822fbf1",
+   "sha256_input_bundle": "613a1755697a7e8dbf1ffc48870a18ea35e84f40be6156efb57a480c2c577ec1",
+   "sha256_invocation_json": "fce700a6d9b2ae7d30e18bc668383dc276f31ac940e150d28affa86ade544902"
+  },
+  "scoped-endpoint-ticket": {
+   "invocation": {
+    "faults": {
+     "mode": "scoped-endpoint-ticket",
+     "n": 90,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "unsafe": false
+    },
+    "scenarios": {
+     "mode": "scoped-endpoint-ticket",
+     "only": null,
+     "repeats": 3,
+     "unsafe": false
+    }
+   },
+   "sha256_fault_schedule_seed,dialog,fault": "22fd23dd8660e4e70f9323762c378e55cf4a66352823322fc628ccdc0822fbf1",
+   "sha256_input_bundle": "573a411ef994e2cb40ab10074a9eb31249d5f311615f57c8d202407d79fcf6f5",
+   "sha256_invocation_json": "b64a730930af2b6a7a212ed1ff510c4965aa494be1772b24794e32a76c16372d"
+  },
+  "scoped-store": {
+   "invocation": {
+    "faults": {
+     "mode": "scoped-store",
+     "n": 90,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "unsafe": false
+    },
+    "scenarios": {
+     "mode": "scoped-store",
+     "only": null,
+     "repeats": 3,
+     "unsafe": false
+    }
+   },
+   "sha256_fault_schedule_seed,dialog,fault": "22fd23dd8660e4e70f9323762c378e55cf4a66352823322fc628ccdc0822fbf1",
+   "sha256_input_bundle": "14fb37f42633b31f3f5494e8c53f91d9c4e7ef63a2fc06bc0b7ff82bffc085f5",
+   "sha256_invocation_json": "780f45eab84f4a7633db9f8f481f79302965a9bf2a65f44d86ba74f537ec8b7b"
+  },
+  "scoped-store+UNSAFE_GUESS": {
+   "invocation": {
+    "faults": {
+     "mode": "scoped-store",
+     "n": 90,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "unsafe": true
+    },
+    "scenarios": {
+     "mode": "scoped-store",
+     "only": [
+      "T05",
+      "T06"
+     ],
+     "repeats": 3,
+     "unsafe": true
+    }
+   },
+   "sha256_fault_schedule_seed,dialog,fault": "22fd23dd8660e4e70f9323762c378e55cf4a66352823322fc628ccdc0822fbf1",
+   "sha256_input_bundle": "8a69d92c2be80f237a703dcda5562689856388ddb40c1ee38dd43ef93809cc28",
+   "sha256_invocation_json": "fe07f8a82751cae598b0cfd281b25b18e08dd27a6bac46d3e35c1793f7696294"
+  }
+ },
+ "git_tree_sha1": "5ccc6f1990392b840c8451436b028bfbb3dda5bb",
+ "package_source_files": 15,
+ "pinned_commit": "278fbf573522b6a45366c9e7f33a0235f4f715b8",
+ "sha256_driver_py": "65f8d7edc0c16d25ad09fd17ca50839fdd03a6e6876902244bcbe1f448ab9e3b",
+ "sha256_git_archive_tar_no_prefix_installed": "8b301dd6562b9eb60f6ef3407ac664d8a3ff8d5cb67a924e50da85f12ea52b7a",
+ "sha256_git_archive_tar_prefixed": "8acbf47fd55dfa35e3ad6440f82ed17ce455560aae397641a5b6d20686d53b4d",
+ "sha256_package_source_manifest": "8e80a60e8d5730a0806d030776e45d89ff8a98c4150f37748d276564624894b2",
+ "sha256_restart_observe_py (v2, extra-noseed)": "f131090b20c0a4b5f2a8a36cd4fd563073b26d8c33ee266854541bd858d10bfc",
+ "sha256_restart_observe_v1_py (noseedA, noseedB, seed0)": "a4ea933c3c026019f27e1e65d4181b0570e2257a310abd04f4793c51d700b456",
+ "sha256_tracked_files_manifest": "245d589b6dc51015425ceffdc41600107db3c1a2f8a53eaab573be1c25f0493d",
+ "tracked_files": 67
+}

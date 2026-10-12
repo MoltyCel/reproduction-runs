@@ -1,0 +1,4 @@
+{"rounds": 2000, "clients_per_round": 2, "backlog": 1, "connections": 4000, "ok": 3896, "errors": {"ConnectionRefusedError": 104}, "python": "3.12.12", "platform": "darwin"}
+{"rounds": 2000, "clients_per_round": 3, "backlog": 1, "connections": 6000, "ok": 3992, "errors": {"ConnectionRefusedError": 2008}, "python": "3.12.12", "platform": "darwin"}
+{"rounds": 500, "clients_per_round": 8, "backlog": 1, "connections": 4000, "ok": 1003, "errors": {"ConnectionRefusedError": 2997}, "python": "3.12.12", "platform": "darwin"}
+{"rounds": 500, "clients_per_round": 8, "backlog": 16, "connections": 4000, "ok": 4000, "errors": {}, "python": "3.12.12", "platform": "darwin"}

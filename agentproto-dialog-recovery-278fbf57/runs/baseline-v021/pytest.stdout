@@ -1,0 +1,240 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: /private/tmp/mt-runs/278fbf57/src/repo
+configfile: pyproject.toml
+collected 8 items
+
+../../../src/repo/tests/test_process_restart_regression.py FFFFFFFF      [100%]
+
+=================================== FAILURES ===================================
+___ test_restarted_agent_does_not_resend_an_in_doubt_operation[global-store] ___
+
+cluster = <restart_harness.Cluster object at 0x1092d9af0>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_does_not_resend_an_in_doubt_operation(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        # The application asks the restarted agent to retry seq 1 with the same
+        # payload while the original execution is still running downstream.
+        r = p2.call("invoke", dialog=d, payload="pay-10", seq=1)
+    
+        assert r["code"] == "OUTCOME_UNKNOWN"
+>       assert c.calls("invoke", pid=p2.pid) == [], "SENT row was treated as permission to resend"
+E       AssertionError: SENT row was treated as permission to resend
+E       assert [{'pid': 8805...d': 'invoke'}] == []
+E         
+E         Left contains one more item: {'pid': 88053, 'gw': 'g1', 'method': 'invoke'}
+E         Use -v to get more diff
+
+../../../src/repo/tests/test_process_restart_regression.py:60: AssertionError
+___ test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-store] ___
+
+cluster = <restart_harness.Cluster object at 0x1092dbc80>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_does_not_resend_an_in_doubt_operation(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        # The application asks the restarted agent to retry seq 1 with the same
+        # payload while the original execution is still running downstream.
+        r = p2.call("invoke", dialog=d, payload="pay-10", seq=1)
+    
+        assert r["code"] == "OUTCOME_UNKNOWN"
+>       assert c.calls("invoke", pid=p2.pid) == [], "SENT row was treated as permission to resend"
+E       AssertionError: SENT row was treated as permission to resend
+E       assert [{'pid': 8805...d': 'invoke'}] == []
+E         
+E         Left contains one more item: {'pid': 88056, 'gw': 'g1', 'method': 'invoke'}
+E         Use -v to get more diff
+
+../../../src/repo/tests/test_process_restart_regression.py:60: AssertionError
+_ test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-endpoint-ticket] _
+
+cluster = <restart_harness.Cluster object at 0x1092de3c0>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_does_not_resend_an_in_doubt_operation(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        # The application asks the restarted agent to retry seq 1 with the same
+        # payload while the original execution is still running downstream.
+        r = p2.call("invoke", dialog=d, payload="pay-10", seq=1)
+    
+        assert r["code"] == "OUTCOME_UNKNOWN"
+>       assert c.calls("invoke", pid=p2.pid) == [], "SENT row was treated as permission to resend"
+E       AssertionError: SENT row was treated as permission to resend
+E       assert [{'pid': 8805...d': 'invoke'}] == []
+E         
+E         Left contains one more item: {'pid': 88059, 'gw': 'g1', 'method': 'invoke'}
+E         Use -v to get more diff
+
+../../../src/repo/tests/test_process_restart_regression.py:60: AssertionError
+_ test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-endpoint-medticket] _
+
+cluster = <restart_harness.Cluster object at 0x1093d8710>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_does_not_resend_an_in_doubt_operation(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        # The application asks the restarted agent to retry seq 1 with the same
+        # payload while the original execution is still running downstream.
+        r = p2.call("invoke", dialog=d, payload="pay-10", seq=1)
+    
+        assert r["code"] == "OUTCOME_UNKNOWN"
+>       assert c.calls("invoke", pid=p2.pid) == [], "SENT row was treated as permission to resend"
+E       AssertionError: SENT row was treated as permission to resend
+E       assert [{'pid': 8806...d': 'invoke'}] == []
+E         
+E         Left contains one more item: {'pid': 88062, 'gw': 'g1', 'method': 'invoke'}
+E         Use -v to get more diff
+
+../../../src/repo/tests/test_process_restart_regression.py:60: AssertionError
+_______ test_restarted_agent_reaches_authoritative_outcome[global-store] _______
+
+cluster = <restart_harness.Cluster object at 0x1093da060>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_reaches_authoritative_outcome(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        assert p2.call("resume", dialog=d)["code"] == "OK"
+        p2.call("settle", dialog=d)                          # original still executing
+        [row] = c.a_ops()
+        assert row["state"] not in ("COMMITTED", "FAILED", "NOT_EXECUTED")
+        assert c.calls("invoke", pid=p2.pid) == []
+    
+        c.ctl("release", gate="tool")                        # original finishes late
+        assert c.ctl("wait_done", method="invoke", n=1)
+        p2.call("settle", dialog=d)
+    
+        [row] = c.a_ops()
+        assert (row["dialog_id"], row["seq"], row["payload"]) == (d, 1, "pay-10")
+>       assert row["state"] == "COMMITTED", f"restarted ledger left the operation {row['state']}"
+E       AssertionError: restarted ledger left the operation SENT
+E       assert 'SENT' == 'COMMITTED'
+E         
+E         - COMMITTED
+E         + SENT
+
+../../../src/repo/tests/test_process_restart_regression.py:86: AssertionError
+_______ test_restarted_agent_reaches_authoritative_outcome[scoped-store] _______
+
+cluster = <restart_harness.Cluster object at 0x1092ddd90>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_reaches_authoritative_outcome(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        assert p2.call("resume", dialog=d)["code"] == "OK"
+        p2.call("settle", dialog=d)                          # original still executing
+        [row] = c.a_ops()
+        assert row["state"] not in ("COMMITTED", "FAILED", "NOT_EXECUTED")
+        assert c.calls("invoke", pid=p2.pid) == []
+    
+        c.ctl("release", gate="tool")                        # original finishes late
+        assert c.ctl("wait_done", method="invoke", n=1)
+        p2.call("settle", dialog=d)
+    
+        [row] = c.a_ops()
+        assert (row["dialog_id"], row["seq"], row["payload"]) == (d, 1, "pay-10")
+>       assert row["state"] == "COMMITTED", f"restarted ledger left the operation {row['state']}"
+E       AssertionError: restarted ledger left the operation SENT
+E       assert 'SENT' == 'COMMITTED'
+E         
+E         - COMMITTED
+E         + SENT
+
+../../../src/repo/tests/test_process_restart_regression.py:86: AssertionError
+__ test_restarted_agent_reaches_authoritative_outcome[scoped-endpoint-ticket] __
+
+cluster = <restart_harness.Cluster object at 0x1092dafc0>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_reaches_authoritative_outcome(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        assert p2.call("resume", dialog=d)["code"] == "OK"
+        p2.call("settle", dialog=d)                          # original still executing
+        [row] = c.a_ops()
+        assert row["state"] not in ("COMMITTED", "FAILED", "NOT_EXECUTED")
+        assert c.calls("invoke", pid=p2.pid) == []
+    
+        c.ctl("release", gate="tool")                        # original finishes late
+        assert c.ctl("wait_done", method="invoke", n=1)
+        p2.call("settle", dialog=d)
+    
+        [row] = c.a_ops()
+        assert (row["dialog_id"], row["seq"], row["payload"]) == (d, 1, "pay-10")
+>       assert row["state"] == "COMMITTED", f"restarted ledger left the operation {row['state']}"
+E       AssertionError: restarted ledger left the operation SENT
+E       assert 'SENT' == 'COMMITTED'
+E         
+E         - COMMITTED
+E         + SENT
+
+../../../src/repo/tests/test_process_restart_regression.py:86: AssertionError
+_ test_restarted_agent_reaches_authoritative_outcome[scoped-endpoint-medticket] _
+
+cluster = <restart_harness.Cluster object at 0x1092d9c70>
+
+    @pytest.mark.parametrize("cluster", MODES, indirect=True)
+    def test_restarted_agent_reaches_authoritative_outcome(cluster):
+        c = cluster
+        p1, d = crash_p1_mid_operation(c)
+        p2 = c.agent("P2")
+        assert p2.pid not in (p1.pid, c.server_pid)
+    
+        assert p2.call("resume", dialog=d)["code"] == "OK"
+        p2.call("settle", dialog=d)                          # original still executing
+        [row] = c.a_ops()
+        assert row["state"] not in ("COMMITTED", "FAILED", "NOT_EXECUTED")
+        assert c.calls("invoke", pid=p2.pid) == []
+    
+        c.ctl("release", gate="tool")                        # original finishes late
+        assert c.ctl("wait_done", method="invoke", n=1)
+        p2.call("settle", dialog=d)
+    
+        [row] = c.a_ops()
+        assert (row["dialog_id"], row["seq"], row["payload"]) == (d, 1, "pay-10")
+>       assert row["state"] == "COMMITTED", f"restarted ledger left the operation {row['state']}"
+E       AssertionError: restarted ledger left the operation SENT
+E       assert 'SENT' == 'COMMITTED'
+E         
+E         - COMMITTED
+E         + SENT
+
+../../../src/repo/tests/test_process_restart_regression.py:86: AssertionError
+- generated xml file: /private/tmp/mt-runs/278fbf57/runs/baseline-v021/pytest-junit.xml -
+=========================== short test summary info ============================
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[global-store]
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-store]
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-endpoint-ticket]
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-endpoint-medticket]
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[global-store]
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[scoped-store]
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[scoped-endpoint-ticket]
+FAILED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[scoped-endpoint-medticket]
+============================== 8 failed in 1.74s ===============================

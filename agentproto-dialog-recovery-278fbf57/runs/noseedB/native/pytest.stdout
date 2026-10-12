@@ -1,0 +1,1652 @@
+........................................................................ [ 18%]
+........................................................................ [ 37%]
+........................................................................ [ 56%]
+........................................................................ [ 75%]
+........................................................................ [ 94%]
+...................                                                      [100%]
+==================================== PASSES ====================================
+_______ test_ticket_of_other_dialog_is_rejected[scoped-endpoint-ticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______ test_ticket_of_other_dialog_is_rejected[scoped-endpoint-medticket] ______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________ test_duplicate_seq_with_different_payload_is_rejected[pending] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+________________________ test_t09_expired[global-store] ________________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______________________ test_t09_expired[global-endpoint] _______________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________________________ test_t09_expired[scoped-store] ________________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________________ test_t09_expired[scoped-endpoint-ticket] ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_________________ test_t09_expired[scoped-endpoint-medticket] __________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________________________ test_t10_revoked[global-store] ________________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______________________ test_t10_revoked[global-endpoint] _______________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________________________ test_t10_revoked[scoped-store] ________________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________________ test_t10_revoked[scoped-endpoint-ticket] ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_________________ test_t10_revoked[scoped-endpoint-medticket] __________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_________ test_t11_wrong_principal_with_valid_reference[global-store] __________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________ test_t11_wrong_principal_with_valid_reference[global-endpoint] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_________ test_t11_wrong_principal_with_valid_reference[scoped-store] __________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____ test_t11_wrong_principal_with_valid_reference[scoped-endpoint-ticket] _____
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___ test_t11_wrong_principal_with_valid_reference[scoped-endpoint-medticket] ___
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________ test_t13_authz_unavailable_fails_closed[global-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________ test_t13_authz_unavailable_fails_closed[global-endpoint] ___________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________ test_t13_authz_unavailable_fails_closed[scoped-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______ test_t13_authz_unavailable_fails_closed[scoped-endpoint-ticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______ test_t13_authz_unavailable_fails_closed[scoped-endpoint-medticket] ______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________ test_valid_mapping_is_not_authorization[global-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________ test_valid_mapping_is_not_authorization[global-endpoint] ___________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________ test_valid_mapping_is_not_authorization[scoped-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______ test_valid_mapping_is_not_authorization[scoped-endpoint-ticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______ test_valid_mapping_is_not_authorization[scoped-endpoint-medticket] ______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________________ test_unauthenticated_context_rejected _____________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resume_failed
+___________________ test_t18_two_gateways_race[global-store] ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g3:diagnostics.py:64 resume_failed
+___________________ test_t18_two_gateways_race[scoped-store] ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g3:diagnostics.py:64 resume_failed
+_____________ test_eight_gateways_race_single_winner[global-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.race7:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race4:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race6:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race5:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race3:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race1:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race2:diagnostics.py:64 resume_failed
+_____________ test_eight_gateways_race_single_winner[scoped-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.race1:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race6:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race5:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race4:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race7:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.race0:diagnostics.py:64 resume_failed
+_____________ test_t19_terminated_dialog_not_resumed[global-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________ test_t19_terminated_dialog_not_resumed[global-endpoint] ____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_____________ test_t19_terminated_dialog_not_resumed[scoped-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______ test_t19_terminated_dialog_not_resumed[scoped-endpoint-noticket] _______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________ test_t19_terminated_dialog_not_resumed[scoped-endpoint-ticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______ test_t19_terminated_dialog_not_resumed[scoped-endpoint-medticket] _______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_____________________ test_invoke_requires_active_mapping ______________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+___________ test_t03_network_interruption_then_resume[global-store] ____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+__________ test_t03_network_interruption_then_resume[global-endpoint] __________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+___________ test_t03_network_interruption_then_resume[scoped-store] ____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_____ test_t03_network_interruption_then_resume[scoped-endpoint-noticket] ______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+______ test_t03_network_interruption_then_resume[scoped-endpoint-ticket] _______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_____ test_t03_network_interruption_then_resume[scoped-endpoint-medticket] _____
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+___________ test_t04_g1_crash_g2_recovery[scoped-endpoint-noticket] ____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________________ test_t05_missing_mapping[global-store] ____________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________________ test_t05_missing_mapping[scoped-store] ____________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______________ test_t05_missing_mapping[scoped-endpoint-noticket] ______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______________ test_t05_missing_mapping[scoped-endpoint-ticket] _______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_____________ test_t05_missing_mapping[scoped-endpoint-medticket] ______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________ test_t16_crash_inside_finalize_transaction[global-store] ___________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g3:diagnostics.py:64 resume_failed
+___________ test_t16_crash_inside_finalize_transaction[scoped-store] ___________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g3:diagnostics.py:64 resume_failed
+______________ test_t16b_crash_during_establishment[global-store] ______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______________ test_t16b_crash_during_establishment[scoped-store] ______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________ test_t16b_crash_during_establishment[scoped-endpoint-noticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_________ test_t16b_crash_during_establishment[scoped-endpoint-ticket] _________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______ test_t16b_crash_during_establishment[scoped-endpoint-medticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+__________________ test_t20_storage_unavailable[global-store] __________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________________ test_t20_storage_unavailable[global-endpoint] _________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+__________________ test_t20_storage_unavailable[scoped-store] __________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________ test_t20_storage_unavailable[scoped-endpoint-noticket] ____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_____________ test_t20_storage_unavailable[scoped-endpoint-ticket] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________ test_t20_storage_unavailable[scoped-endpoint-medticket] ____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________________ test_t20_establish_fails_closed_without_store _________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 establish_failed
+____________ test_t06_similar_dialogs_never_confused[global-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________ test_t06_similar_dialogs_never_confused[scoped-store] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______ test_t06_similar_dialogs_never_confused[scoped-endpoint-noticket] _______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______ test_t06_similar_dialogs_never_confused[scoped-endpoint-ticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______ test_t06_similar_dialogs_never_confused[scoped-endpoint-medticket] ______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_____________ test_t06_negative_control_detects_wrong_association ______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________ test_t07_cross_tenant_identical_local_ids[global-store] ____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 establish_failed
+__________ test_t07_cross_tenant_identical_local_ids[global-endpoint] __________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 establish_failed
+_____ test_t07_cross_tenant_identical_local_ids[scoped-endpoint-noticket] ______
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______________ test_t12_tampered_recovery_material[global-store] _______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_____________ test_t12_tampered_recovery_material[global-endpoint] _____________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______________ test_t12_tampered_recovery_material[scoped-store] _______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_________ test_t12_tampered_recovery_material[scoped-endpoint-ticket] __________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________ test_t12_tampered_recovery_material[scoped-endpoint-medticket] ________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____ test_t12b_rollback_passes_integrity_but_fails_freshness[global-store] _____
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____ test_t12b_rollback_passes_integrity_but_fails_freshness[scoped-store] _____
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________________ test_corrupted_row_garbage[global-store] ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___________________ test_corrupted_row_garbage[scoped-store] ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______________ test_d_lost_ack_retry_settles_once[global-store] _______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_______________ test_d_lost_ack_retry_settles_once[scoped-store] _______________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+__________ test_d_lost_ack_retry_settles_once[scoped-endpoint-ticket] __________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+________ test_d_lost_ack_retry_settles_once[scoped-endpoint-medticket] _________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[dropped_before_b-global-store] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[dropped_before_b-scoped-store] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[dropped_before_b-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[dropped_before_b-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-global-store] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-scoped-store] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_________ test_f_concurrent_conflicting_submissions[True-global-store] _________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_________ test_f_concurrent_conflicting_submissions[True-scoped-store] _________
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+____ test_f_concurrent_conflicting_submissions[True-scoped-endpoint-ticket] ____
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+__ test_f_concurrent_conflicting_submissions[True-scoped-endpoint-medticket] ___
+------------------------------ Captured log call -------------------------------
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+______________ test_logs_contain_no_raw_identifiers[global-store] ______________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____________ test_logs_contain_no_raw_identifiers[global-endpoint] _____________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+______________ test_logs_contain_no_raw_identifiers[scoped-store] ______________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_________ test_logs_contain_no_raw_identifiers[scoped-endpoint-ticket] _________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_______ test_logs_contain_no_raw_identifiers[scoped-endpoint-medticket] ________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+________________________ test_redaction_is_domain_keyed ________________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+_______________ test_ticket_binding_reaches_only_gateways_and_b ________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_________________ test_binding_not_used_outside_b_ticket_mode __________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+________________ test_t08_stale_reference_replay[global-store] _________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_______________ test_t08_stale_reference_replay[global-endpoint] _______________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+________________ test_t08_stale_reference_replay[scoped-store] _________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+___________ test_t08_stale_reference_replay[scoped-endpoint-ticket] ____________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+__________ test_t08_stale_reference_replay[scoped-endpoint-medticket] __________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+________ test_t15_repeated_recovery_request_is_idempotent[global-store] ________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+______ test_t15_repeated_recovery_request_is_idempotent[global-endpoint] _______
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+________ test_t15_repeated_recovery_request_is_idempotent[scoped-store] ________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+___ test_t15_repeated_recovery_request_is_idempotent[scoped-endpoint-ticket] ___
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+_ test_t15_repeated_recovery_request_is_idempotent[scoped-endpoint-medticket] __
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+_____ test_tickets_rotate_and_old_ticket_is_stale[scoped-endpoint-ticket] ______
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+____ test_tickets_rotate_and_old_ticket_is_stale[scoped-endpoint-medticket] ____
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+_____________ test_one_step_behind_is_treated_as_idempotent_retry ______________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+_____ test_ticket_epoch_must_match_presented_epoch[scoped-endpoint-ticket] _____
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+___ test_ticket_epoch_must_match_presented_epoch[scoped-endpoint-medticket] ____
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g2:diagnostics.py:64 resume_failed
+__ test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[global-store] ___
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+__ test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[scoped-store] ___
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_ test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_ test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_____________ test_1b_retry_op_state_check_is_atomic[global-store] _____________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_____________ test_1b_retry_op_state_check_is_atomic[scoped-store] _____________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+________ test_1b_retry_op_state_check_is_atomic[scoped-endpoint-ticket] ________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+______ test_1b_retry_op_state_check_is_atomic[scoped-endpoint-medticket] _______
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_________________ test_1c_conflict_is_not_resent[global-store] _________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+_________________ test_1c_conflict_is_not_resent[scoped-store] _________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+____________ test_1c_conflict_is_not_resent[scoped-endpoint-ticket] ____________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+__________ test_1c_conflict_is_not_resent[scoped-endpoint-medticket] ___________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+_________ test_1d_failed_before_execution_may_be_resent[global-store] __________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_________ test_1d_failed_before_execution_may_be_resent[scoped-store] __________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+____ test_1d_failed_before_execution_may_be_resent[scoped-endpoint-ticket] _____
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+___ test_1d_failed_before_execution_may_be_resent[scoped-endpoint-medticket] ___
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+__________ test_1e_unknown_resend_executes_at_most_once[global-store] __________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+__________ test_1e_unknown_resend_executes_at_most_once[scoped-store] __________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_____ test_1e_unknown_resend_executes_at_most_once[scoped-endpoint-ticket] _____
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+___ test_1e_unknown_resend_executes_at_most_once[scoped-endpoint-medticket] ____
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_ test_2a_fencing_an_unseen_operation_requires_authorization[revoked-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[revoked-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[revoked-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[revoked-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[expired-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[expired-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[expired-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[expired-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[revoked-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[revoked-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[revoked-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[revoked-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[expired-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[expired-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[expired-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[expired-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+_ test_2d_already_fenced_not_executed_is_readable_without_authorization[global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2d_already_fenced_not_executed_is_readable_without_authorization[scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2d_already_fenced_not_executed_is_readable_without_authorization[scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2d_already_fenced_not_executed_is_readable_without_authorization[scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+__ test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[global-store] ___
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+__ test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[scoped-store] ___
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2f_correlation_reference_alone_does_not_authorize_a_fence[global-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2f_correlation_reference_alone_does_not_authorize_a_fence[scoped-store] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2f_correlation_reference_alone_does_not_authorize_a_fence[scoped-endpoint-ticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+_ test_2f_correlation_reference_alone_does_not_authorize_a_fence[scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 resolve_op_failed
+______________ test_2g_authorized_fence_still_works[global-store] ______________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+______________ test_2g_authorized_fence_still_works[scoped-store] ______________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_________ test_2g_authorized_fence_still_works[scoped-endpoint-ticket] _________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_______ test_2g_authorized_fence_still_works[scoped-endpoint-medticket] ________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+________________ test_t14_committed_but_ack_lost[global-store] _________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_______________ test_t14_committed_but_ack_lost[global-endpoint] _______________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+________________ test_t14_committed_but_ack_lost[scoped-store] _________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+___________ test_t14_committed_but_ack_lost[scoped-endpoint-ticket] ____________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+__________ test_t14_committed_but_ack_lost[scoped-endpoint-medticket] __________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_______ test_t14b_unknown_outcome_requires_reconciliation[global-store] ________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+______ test_t14b_unknown_outcome_requires_reconciliation[global-endpoint] ______
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_______ test_t14b_unknown_outcome_requires_reconciliation[scoped-store] ________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+__ test_t14b_unknown_outcome_requires_reconciliation[scoped-endpoint-ticket] ___
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_ test_t14b_unknown_outcome_requires_reconciliation[scoped-endpoint-medticket] _
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+WARNING  agentproto_recovery.gateway.g1:diagnostics.py:64 invoke_failed
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.gateway.g2:diagnostics.py:64 dialog_resumed
+INFO     agentproto_recovery.agent_a:diagnostics.py:64 resume_attempt
+_____________________ test_resend_same_seq_is_deduplicated _____________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+______________________ test_reconcile_when_tool_never_ran ______________________
+------------------------------ Captured log call -------------------------------
+INFO     agentproto_recovery.agent_b:diagnostics.py:64 dialog_established
+INFO     agentproto_recovery.gateway.g1:diagnostics.py:64 dialog_established
+=========================== short test summary info ============================
+PASSED ../../../src/repo/tests/test_audit_regressions.py::test_ticket_of_other_dialog_is_rejected[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_audit_regressions.py::test_ticket_of_other_dialog_is_rejected[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_audit_regressions.py::test_reconcile_while_tool_call_in_flight_does_not_clear_pending
+PASSED ../../../src/repo/tests/test_audit_regressions.py::test_late_tool_call_after_reconcile_is_fenced_not_duplicated
+PASSED ../../../src/repo/tests/test_audit_regressions.py::test_duplicate_seq_with_different_payload_is_rejected[committed]
+PASSED ../../../src/repo/tests/test_audit_regressions.py::test_duplicate_seq_with_different_payload_is_rejected[pending]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t09_expired[global-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t09_expired[global-endpoint]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t09_expired[scoped-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t09_expired[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t09_expired[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t10_revoked[global-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t10_revoked[global-endpoint]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t10_revoked[scoped-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t10_revoked[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t10_revoked[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t11_wrong_principal_with_valid_reference[global-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t11_wrong_principal_with_valid_reference[global-endpoint]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t11_wrong_principal_with_valid_reference[scoped-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t11_wrong_principal_with_valid_reference[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t11_wrong_principal_with_valid_reference[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t13_authz_unavailable_fails_closed[global-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t13_authz_unavailable_fails_closed[global-endpoint]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t13_authz_unavailable_fails_closed[scoped-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t13_authz_unavailable_fails_closed[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_t13_authz_unavailable_fails_closed[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_valid_mapping_is_not_authorization[global-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_valid_mapping_is_not_authorization[global-endpoint]
+PASSED ../../../src/repo/tests/test_authorization.py::test_valid_mapping_is_not_authorization[scoped-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_valid_mapping_is_not_authorization[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_valid_mapping_is_not_authorization[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_b_enforces_authz_even_if_gateway_skipped_it[global-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_b_enforces_authz_even_if_gateway_skipped_it[global-endpoint]
+PASSED ../../../src/repo/tests/test_authorization.py::test_b_enforces_authz_even_if_gateway_skipped_it[scoped-store]
+PASSED ../../../src/repo/tests/test_authorization.py::test_b_enforces_authz_even_if_gateway_skipped_it[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_b_enforces_authz_even_if_gateway_skipped_it[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_authorization.py::test_unauthenticated_context_rejected
+PASSED ../../../src/repo/tests/test_concurrency.py::test_t18_two_gateways_race[global-store]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_t18_two_gateways_race[global-endpoint]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_t18_two_gateways_race[scoped-store]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_t18_two_gateways_race[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_t18_two_gateways_race[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_eight_gateways_race_single_winner[global-store]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_eight_gateways_race_single_winner[scoped-store]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_parallel_recovery_of_distinct_dialogs[global-store]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_parallel_recovery_of_distinct_dialogs[global-endpoint]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_parallel_recovery_of_distinct_dialogs[scoped-store]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_parallel_recovery_of_distinct_dialogs[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_concurrency.py::test_parallel_recovery_of_distinct_dialogs[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t01_establish[global-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t01_establish[global-endpoint]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t01_establish[scoped-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t01_establish[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t01_establish[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t01_establish[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t02_continuation[global-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t02_continuation[global-endpoint]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t02_continuation[scoped-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t02_continuation[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t02_continuation[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t02_continuation[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t19_terminated_dialog_not_resumed[global-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t19_terminated_dialog_not_resumed[global-endpoint]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t19_terminated_dialog_not_resumed[scoped-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t19_terminated_dialog_not_resumed[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t19_terminated_dialog_not_resumed[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_t19_terminated_dialog_not_resumed[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_identifiers_are_independent_in_scoped_mode[global-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_identifiers_are_independent_in_scoped_mode[global-endpoint]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_identifiers_are_independent_in_scoped_mode[scoped-store]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_identifiers_are_independent_in_scoped_mode[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_identifiers_are_independent_in_scoped_mode[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_identifiers_are_independent_in_scoped_mode[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_terminated_is_absorbing
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_older_checkpoint_cannot_overwrite_newer_state
+PASSED ../../../src/repo/tests/test_dialog_lifecycle.py::test_invoke_requires_active_mapping
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t03_network_interruption_then_resume[global-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t03_network_interruption_then_resume[global-endpoint]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t03_network_interruption_then_resume[scoped-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t03_network_interruption_then_resume[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t03_network_interruption_then_resume[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t03_network_interruption_then_resume[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t04_g1_crash_g2_recovery[global-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t04_g1_crash_g2_recovery[global-endpoint]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t04_g1_crash_g2_recovery[scoped-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t04_g1_crash_g2_recovery[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t04_g1_crash_g2_recovery[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t04_g1_crash_g2_recovery[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t05_missing_mapping[global-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t05_missing_mapping[global-endpoint]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t05_missing_mapping[scoped-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t05_missing_mapping[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t05_missing_mapping[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t05_missing_mapping[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16_crash_inside_finalize_transaction[global-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16_crash_inside_finalize_transaction[global-endpoint]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16_crash_inside_finalize_transaction[scoped-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16_crash_inside_finalize_transaction[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16_crash_inside_finalize_transaction[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16_store_is_consistent_after_crash
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16b_crash_during_establishment[global-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16b_crash_during_establishment[global-endpoint]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16b_crash_during_establishment[scoped-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16b_crash_during_establishment[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16b_crash_during_establishment[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t16b_crash_during_establishment[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t20_storage_unavailable[global-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t20_storage_unavailable[global-endpoint]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t20_storage_unavailable[scoped-store]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t20_storage_unavailable[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t20_storage_unavailable[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t20_storage_unavailable[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_gateway_failover.py::test_t20_establish_fails_closed_without_store
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t06_similar_dialogs_never_confused[global-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t06_similar_dialogs_never_confused[global-endpoint]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t06_similar_dialogs_never_confused[scoped-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t06_similar_dialogs_never_confused[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t06_similar_dialogs_never_confused[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t06_similar_dialogs_never_confused[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t06_negative_control_detects_wrong_association
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t07_cross_tenant_identical_local_ids[global-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t07_cross_tenant_identical_local_ids[global-endpoint]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t07_cross_tenant_identical_local_ids[scoped-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t07_cross_tenant_identical_local_ids[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t07_cross_tenant_identical_local_ids[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t07_cross_tenant_identical_local_ids[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12_tampered_recovery_material[global-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12_tampered_recovery_material[global-endpoint]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12_tampered_recovery_material[scoped-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12_tampered_recovery_material[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12_tampered_recovery_material[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12_tampered_recovery_material[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12b_rollback_passes_integrity_but_fails_freshness[global-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_t12b_rollback_passes_integrity_but_fails_freshness[scoped-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_corrupted_row_garbage[global-store]
+PASSED ../../../src/repo/tests/test_mapping_failures.py::test_corrupted_row_garbage[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_a_committed_result_preserved_after_conflicting_retry[global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_a_committed_result_preserved_after_conflicting_retry[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_a_committed_result_preserved_after_conflicting_retry[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_a_committed_result_preserved_after_conflicting_retry[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_conflict_rejected_locally_without_dispatch[global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_conflict_rejected_locally_without_dispatch[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_conflict_rejected_locally_without_dispatch[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_conflict_rejected_locally_without_dispatch[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_c_identical_retry_is_idempotent[global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_c_identical_retry_is_idempotent[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_c_identical_retry_is_idempotent[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_c_identical_retry_is_idempotent[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_d_lost_ack_retry_settles_once[global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_d_lost_ack_retry_settles_once[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_d_lost_ack_retry_settles_once[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_d_lost_ack_retry_settles_once[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[dropped_before_b-global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[dropped_before_b-scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[dropped_before_b-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[dropped_before_b-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_e_unsettled_operation_rejects_different_payload[executed_outcome_unrecorded-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[False-global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[False-scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[False-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[False-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[True-global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[True-scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[True-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_f_concurrent_conflicting_submissions[True-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_g_late_failure_cannot_overwrite_commit[global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_g_late_failure_cannot_overwrite_commit[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_g_late_failure_cannot_overwrite_commit[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_g_late_failure_cannot_overwrite_commit[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_digest_check_still_rejects_when_a_is_bypassed[global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_digest_check_still_rejects_when_a_is_bypassed[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_digest_check_still_rejects_when_a_is_bypassed[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_b_digest_check_still_rejects_when_a_is_bypassed[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_adopted_seq_conflicting_with_b_is_marked_not_committed[global-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_adopted_seq_conflicting_with_b_is_marked_not_committed[scoped-store]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_adopted_seq_conflicting_with_b_is_marked_not_committed[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_operation_ledger_integrity.py::test_adopted_seq_conflicting_with_b_is_marked_not_committed[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_global_id_lets_endpoints_join[global-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_global_id_lets_endpoints_join[global-endpoint]
+PASSED ../../../src/repo/tests/test_privacy.py::test_scoped_ids_prevent_endpoint_identifier_join[scoped-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_scoped_ids_prevent_endpoint_identifier_join[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_b_sealed_ticket_is_shared_by_a_and_b_but_rotates
+PASSED ../../../src/repo/tests/test_privacy.py::test_global_id_is_one_value_forever
+PASSED ../../../src/repo/tests/test_privacy.py::test_gateways_always_link_both_sides[global-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_gateways_always_link_both_sides[global-endpoint]
+PASSED ../../../src/repo/tests/test_privacy.py::test_gateways_always_link_both_sides[scoped-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_gateways_always_link_both_sides[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_gateways_always_link_both_sides[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_independent_gateway_operators_can_join[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_independent_gateway_operators_can_join[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_opaque_ids_do_not_stop_order_based_linkage[global-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_opaque_ids_do_not_stop_order_based_linkage[global-endpoint]
+PASSED ../../../src/repo/tests/test_privacy.py::test_opaque_ids_do_not_stop_order_based_linkage[scoped-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_opaque_ids_do_not_stop_order_based_linkage[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_opaque_ids_do_not_stop_order_based_linkage[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_logs_contain_no_raw_identifiers[global-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_logs_contain_no_raw_identifiers[global-endpoint]
+PASSED ../../../src/repo/tests/test_privacy.py::test_logs_contain_no_raw_identifiers[scoped-store]
+PASSED ../../../src/repo/tests/test_privacy.py::test_logs_contain_no_raw_identifiers[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_logs_contain_no_raw_identifiers[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_privacy.py::test_redaction_is_domain_keyed
+PASSED ../../../src/repo/tests/test_privacy.py::test_ticket_binding_reaches_only_gateways_and_b
+PASSED ../../../src/repo/tests/test_privacy.py::test_binding_not_used_outside_b_ticket_mode
+PASSED ../../../src/repo/tests/test_process_restart.py::test_a_b_sent_survives_restart_with_identity[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_a_b_sent_survives_restart_with_identity[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_a_b_sent_survives_restart_with_identity[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_a_b_sent_survives_restart_with_identity[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_a_b_sent_survives_restart_with_identity[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_a_b_sent_survives_restart_with_identity[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_c_original_execution_completes_late_and_is_recorded_once[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_c_original_execution_completes_late_and_is_recorded_once[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_c_original_execution_completes_late_and_is_recorded_once[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_c_original_execution_completes_late_and_is_recorded_once[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_c_original_execution_completes_late_and_is_recorded_once[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_c_original_execution_completes_late_and_is_recorded_once[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d_not_yet_executed_is_fenced_then_retried_with_original_identity[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d_not_yet_executed_is_fenced_then_retried_with_original_identity[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d_not_yet_executed_is_fenced_then_retried_with_original_identity[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d_not_yet_executed_is_fenced_then_retried_with_original_identity[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d_not_yet_executed_is_fenced_then_retried_with_original_identity[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d_not_yet_executed_is_fenced_then_retried_with_original_identity[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d2_zombie_executor_after_simulated_b_restart_is_fenced_at_the_tool[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d2_zombie_executor_after_simulated_b_restart_is_fenced_at_the_tool[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d2_zombie_executor_after_simulated_b_restart_is_fenced_at_the_tool[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d2_zombie_executor_after_simulated_b_restart_is_fenced_at_the_tool[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d2_zombie_executor_after_simulated_b_restart_is_fenced_at_the_tool[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_d2_zombie_executor_after_simulated_b_restart_is_fenced_at_the_tool[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_e_dialog_resumption_submits_nothing[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_e_dialog_resumption_submits_nothing[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_e_dialog_resumption_submits_nothing[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_e_dialog_resumption_submits_nothing[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_e_dialog_resumption_submits_nothing[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_e_dialog_resumption_submits_nothing[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_f_conflicting_payload_rejected_after_restart[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_f_conflicting_payload_rejected_after_restart[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_f_conflicting_payload_rejected_after_restart[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_f_conflicting_payload_rejected_after_restart[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_f_conflicting_payload_rejected_after_restart[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_f_conflicting_payload_rejected_after_restart[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_g_late_stale_answer_cannot_overwrite_commit[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_g_late_stale_answer_cannot_overwrite_commit[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_g_late_stale_answer_cannot_overwrite_commit[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_g_late_stale_answer_cannot_overwrite_commit[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_g_late_stale_answer_cannot_overwrite_commit[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_g_late_stale_answer_cannot_overwrite_commit[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h_repeated_reconciliation_and_second_restart_are_idempotent[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h_repeated_reconciliation_and_second_restart_are_idempotent[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h_repeated_reconciliation_and_second_restart_are_idempotent[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h_repeated_reconciliation_and_second_restart_are_idempotent[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h_repeated_reconciliation_and_second_restart_are_idempotent[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h_repeated_reconciliation_and_second_restart_are_idempotent[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h2_two_restarts_before_resolution[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h2_two_restarts_before_resolution[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h2_two_restarts_before_resolution[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h2_two_restarts_before_resolution[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h2_two_restarts_before_resolution[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_h2_two_restarts_before_resolution[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_i_unavailable_downstream_leaves_explicitly_unresolved[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_i_unavailable_downstream_leaves_explicitly_unresolved[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_i_unavailable_downstream_leaves_explicitly_unresolved[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_i_unavailable_downstream_leaves_explicitly_unresolved[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_i_unavailable_downstream_leaves_explicitly_unresolved[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_i_unavailable_downstream_leaves_explicitly_unresolved[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_restart_combined_with_gateway_failover[global-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_restart_combined_with_gateway_failover[global-endpoint]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_restart_combined_with_gateway_failover[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_restart_combined_with_gateway_failover[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_restart_combined_with_gateway_failover[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart.py::test_restart_combined_with_failover_unsupported_variant_fails_closed[scoped-endpoint-noticket]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[global-store]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_does_not_resend_an_in_doubt_operation[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[global-store]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[scoped-store]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_process_restart_regression.py::test_restarted_agent_reaches_authoritative_outcome[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_t08_stale_reference_replay[global-store]
+PASSED ../../../src/repo/tests/test_replay.py::test_t08_stale_reference_replay[global-endpoint]
+PASSED ../../../src/repo/tests/test_replay.py::test_t08_stale_reference_replay[scoped-store]
+PASSED ../../../src/repo/tests/test_replay.py::test_t08_stale_reference_replay[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_t08_stale_reference_replay[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_t15_repeated_recovery_request_is_idempotent[global-store]
+PASSED ../../../src/repo/tests/test_replay.py::test_t15_repeated_recovery_request_is_idempotent[global-endpoint]
+PASSED ../../../src/repo/tests/test_replay.py::test_t15_repeated_recovery_request_is_idempotent[scoped-store]
+PASSED ../../../src/repo/tests/test_replay.py::test_t15_repeated_recovery_request_is_idempotent[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_t15_repeated_recovery_request_is_idempotent[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_tickets_rotate_and_old_ticket_is_stale[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_tickets_rotate_and_old_ticket_is_stale[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_one_step_behind_is_treated_as_idempotent_retry
+PASSED ../../../src/repo/tests/test_replay.py::test_ticket_epoch_must_match_presented_epoch[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_replay.py::test_ticket_epoch_must_match_presented_epoch[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1a_invoke_cannot_retry_not_executed_bypassing_retry_op[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1b_retry_op_state_check_is_atomic[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1b_retry_op_state_check_is_atomic[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1b_retry_op_state_check_is_atomic[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1b_retry_op_state_check_is_atomic[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1c_conflict_is_not_resent[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1c_conflict_is_not_resent[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1c_conflict_is_not_resent[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1c_conflict_is_not_resent[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1d_failed_before_execution_may_be_resent[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1d_failed_before_execution_may_be_resent[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1d_failed_before_execution_may_be_resent[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1d_failed_before_execution_may_be_resent[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1e_unknown_resend_executes_at_most_once[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1e_unknown_resend_executes_at_most_once[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1e_unknown_resend_executes_at_most_once[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_1e_unknown_resend_executes_at_most_once[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[revoked-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[revoked-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[revoked-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[revoked-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[expired-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[expired-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[expired-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[expired-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2a_fencing_an_unseen_operation_requires_authorization[authz-unavailable-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[revoked-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[expired-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2b_aborting_a_stale_pending_attempt_requires_authorization[authz-unavailable-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[revoked-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[revoked-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[revoked-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[revoked-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[expired-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[expired-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[expired-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[expired-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2c_reading_an_existing_result_needs_no_authorization[authz-unavailable-scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2d_already_fenced_not_executed_is_readable_without_authorization[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2d_already_fenced_not_executed_is_readable_without_authorization[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2d_already_fenced_not_executed_is_readable_without_authorization[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2d_already_fenced_not_executed_is_readable_without_authorization[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2e_unauthenticated_caller_is_rejected_at_gateway_and_b[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2f_correlation_reference_alone_does_not_authorize_a_fence[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2f_correlation_reference_alone_does_not_authorize_a_fence[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2f_correlation_reference_alone_does_not_authorize_a_fence[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2f_correlation_reference_alone_does_not_authorize_a_fence[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2g_authorized_fence_still_works[global-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2g_authorized_fence_still_works[scoped-store]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2g_authorized_fence_still_works[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_review_v022.py::test_2g_authorized_fence_still_works[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14_committed_but_ack_lost[global-store]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14_committed_but_ack_lost[global-endpoint]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14_committed_but_ack_lost[scoped-store]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14_committed_but_ack_lost[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14_committed_but_ack_lost[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14b_unknown_outcome_requires_reconciliation[global-store]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14b_unknown_outcome_requires_reconciliation[global-endpoint]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14b_unknown_outcome_requires_reconciliation[scoped-store]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14b_unknown_outcome_requires_reconciliation[scoped-endpoint-ticket]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_t14b_unknown_outcome_requires_reconciliation[scoped-endpoint-medticket]
+PASSED ../../../src/repo/tests/test_side_effects.py::test_resend_same_seq_is_deduplicated
+PASSED ../../../src/repo/tests/test_side_effects.py::test_reconcile_when_tool_never_ran
+379 passed in 18.36s

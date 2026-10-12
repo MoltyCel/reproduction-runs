@@ -1,0 +1,66 @@
+2,6c2,8
+< # Runs every configuration of agentproto-recovery @ a940ace in its own process.
+< # usage: run_all.sh VARIANT    VARIANT = seed0 | seed1 | noseedA | noseedB
+< #   seedN   : PYTHONHASHSEED=N, interpreter flags -P -s -B, env -i (clean env)
+< #             (-I would discard PYTHONHASHSEED, see run-summary.md)
+< #   noseedX : python -I, no PYTHONHASHSEED (hash randomisation on)
+---
+> # Runs every configuration of agentproto-recovery @ 278fbf5 (v0.2.2) in its own process.
+> # usage: run_all.sh VARIANT    VARIANT = noseedA | noseedB | seed0
+> #   noseedX : no PYTHONHASHSEED (hash randomisation on, as in the author's runs)
+> #   seedN   : PYTHONHASHSEED=N (control only)
+> # All variants: env -i (clean env), python -P -s -B, PYTHONDONTWRITEBYTECODE=1 so
+> # that subprocesses started by the repo's restart harness write no bytecode either.
+> # TMPDIR points into .scratch (the harness itself hard-codes /tmp for its sockets).
+8c10
+< T="$HOME/Downloads/block-1012/tab-nikhil"
+---
+> T="/private/tmp/mt-runs/278fbf57"   # = /tmp/mt-runs/278fbf57 (canonical form, so pytest prints relative paths as before)
+10a13
+> OBS="$T/scripts/restart_observe_v1.py"   # noseedA/noseedB/seed0 ran with v1 in the earlier run
+13,14c16,18
+< mkdir -p "$OUT/per-config" "$OUT/native"
+< WORK=$(mktemp -d "${TMPDIR:-/tmp}/nikhil-cwd-XXXX")   # empty cwd, nothing importable
+---
+> SCR="$T/.scratch/$V"
+> mkdir -p "$OUT/per-config" "$OUT/native" "$OUT/restart" "$SCR/tmp"
+> WORK=$(mktemp -d "$SCR/cwd-XXXX")   # empty cwd, nothing importable
+16c20,22
+< 
+---
+> BASEENV=(PATH=/usr/bin:/bin HOME="$T/.scratch/home" TMPDIR="$SCR/tmp" PYTHONDONTWRITEBYTECODE=1)
+> # pytest only: plugin that keeps the machine name out of the JUnit XML hostname attribute
+> runpt() { local BASEENV=("${BASEENV[@]}" PYTHONPATH="$T/scripts/pytest_plugin"); run -m pytest -p junit_nohostname "$@"; }
+18,22c24,26
+<   seed*) SEED="${V#seed}"
+<          run() { env -i PATH=/usr/bin:/bin HOME="$HOME" TMPDIR="${TMPDIR:-/tmp}" \
+<                    PYTHONHASHSEED="$SEED" "$PY" -P -s -B "$@"; } ;;
+<   noseed*) run() { env -i PATH=/usr/bin:/bin HOME="$HOME" TMPDIR="${TMPDIR:-/tmp}" \
+<                    "$PY" -I -B "$@"; } ;;
+---
+>   seed*)   SEED="${V#seed}"
+>            run() { env -i "${BASEENV[@]}" PYTHONHASHSEED="$SEED" "$PY" -P -s -B "$@"; } ;;
+>   noseed*) run() { env -i "${BASEENV[@]}" "$PY" -P -s -B "$@"; } ;;
+45,46c49,50
+< # native CLI, default arguments, printed summary kept verbatim
+< for c in scenarios faults; do
+---
+> # native CLI, default arguments (repeats 3, seeds 1 2 3, 90 dialogs, privacy 50)
+> for c in scenarios faults privacy; do
+51,52c55,58
+< # test suite (pytest), cache plugin off so nothing is written into the repo
+< run -m pytest -p no:cacheprovider -q --rootdir "$T/src/repo" "$T/src/repo/tests" \
+---
+> # full test suite, cache plugin off so nothing is written into the repo
+> t0=$SECONDS
+> runpt -p no:cacheprovider -rA --junitxml "$OUT/native/pytest-junit.xml" \
+>     --basetemp "$SCR/pytest" --rootdir "$T/src/repo" "$T/src/repo/tests" \
+54c60,65
+< printf "pytest\tall\t%s\t-\t-\n" "$?" >> "$MANIFEST"
+---
+> printf "pytest\tall\t%s\t-\t%s\n" "$?" "$((SECONDS-t0))" >> "$MANIFEST"
+> # Agent A restart cases, observed (no assertions), 3 repeats
+> t0=$SECONDS
+> run "$OBS" "$T/src/repo" "$SCR/restart" "$OUT/restart/restart-observe.jsonl" --repeats 3 \
+>     > "$OUT/restart/restart-observe.stdout" 2> "$OUT/restart/restart-observe.stderr"
+> printf "restart-observe\tall\t%s\t-\t%s\n" "$?" "$((SECONDS-t0))" >> "$MANIFEST"

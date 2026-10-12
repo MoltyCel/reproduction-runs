@@ -1,0 +1,26 @@
+{
+  "agentproto_recovery": "0.2.2",
+  "args": {
+    "bench_dialogs": 400,
+    "command": "scenarios",
+    "fault_dialogs": 90,
+    "out": "/private/tmp/mt-runs/278fbf57/runs/noseedA/native/scenarios",
+    "privacy_dialogs": 50,
+    "repeats": 3,
+    "runs": 5,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "threads": 4
+  },
+  "cpu_count": 10,
+  "cryptography": "50.0.1",
+  "machine": "arm64",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.12",
+  "sqlite": "3.50.4",
+  "timestamp_utc": "2026-10-12T13:17:05Z",
+  "wall_seconds": 2.15
+}

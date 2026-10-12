@@ -1,0 +1,4 @@
+git archive --format=tar --prefix=agentproto-recovery-278fbf5/ 278fbf573522b6a45366c9e7f33a0235f4f715b8  (git 2.50.1)
+8acbf47fd55dfa35e3ad6440f82ed17ce455560aae397641a5b6d20686d53b4d
+git archive --format=tar 278fbf573522b6a45366c9e7f33a0235f4f715b8  (no prefix; this tar was extracted and installed)
+8b301dd6562b9eb60f6ef3407ac664d8a3ff8d5cb67a924e50da85f12ea52b7a

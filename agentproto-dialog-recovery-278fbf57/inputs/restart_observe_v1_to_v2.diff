@@ -1,0 +1,13 @@
+60c60,69
+<     log.append(["gate_entered:" + gate, c.ctl("wait_entered", gate=gate)])
+---
+>     entered = c.ctl("wait_entered", gate=gate)
+>     log.append(["gate_entered:" + gate, entered])
+>     if not entered:  # diagnostics only when the gate was not reached (added after run noseedB)
+>         import select
+>         log.append(["diag:P1_alive", p1.proc.poll() is None])
+>         log.append(["diag:server_calls_from_P1", [x["method"] for x in c.calls(pid=p1.pid)]])
+>         log.append(["diag:server_done_from_P1", [x["method"] for x in c.done()
+>                                                  if x["pid"] == p1.pid]])
+>         r, _, _ = select.select([p1.proc.stdout], [], [], 0)
+>         log.append(["diag:P1_stdout", p1.proc.stdout.readline()[:4000] if r else None])

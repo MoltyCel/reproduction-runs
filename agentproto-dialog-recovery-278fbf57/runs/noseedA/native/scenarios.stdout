@@ -1,0 +1,1 @@
+scenarios: {"repeats_per_cell": 3, "cells": 152, "cells_with_nondeterministic_outcome": {}, "incorrect_associations": 1, "incorrect_associations_excluding_negative_control": 0}

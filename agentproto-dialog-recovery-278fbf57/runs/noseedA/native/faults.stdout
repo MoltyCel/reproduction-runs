@@ -1,0 +1,58 @@
+faults: {
+ "global-endpoint": {
+  "attempts": 270,
+  "recovered": 113,
+  "explicit_failures": 157,
+  "incorrect_associations": 0,
+  "safety_violations": 0,
+  "recovery_rate_where_recovery_permitted": 1.0
+ },
+ "global-store": {
+  "attempts": 270,
+  "recovered": 70,
+  "explicit_failures": 200,
+  "incorrect_associations": 0,
+  "safety_violations": 0,
+  "recovery_rate_where_recovery_permitted": 0.6195
+ },
+ "scoped-endpoint-medticket": {
+  "attempts": 270,
+  "recovered": 67,
+  "explicit_failures": 203,
+  "incorrect_associations": 0,
+  "safety_violations": 0,
+  "recovery_rate_where_recovery_permitted": 0.5929
+ },
+ "scoped-endpoint-noticket": {
+  "attempts": 270,
+  "recovered": 0,
+  "explicit_failures": 270,
+  "incorrect_associations": 0,
+  "safety_violations": 0,
+  "recovery_rate_where_recovery_permitted": 0.0
+ },
+ "scoped-endpoint-ticket": {
+  "attempts": 270,
+  "recovered": 67,
+  "explicit_failures": 203,
+  "incorrect_associations": 0,
+  "safety_violations": 0,
+  "recovery_rate_where_recovery_permitted": 0.5929
+ },
+ "scoped-store": {
+  "attempts": 270,
+  "recovered": 70,
+  "explicit_failures": 200,
+  "incorrect_associations": 0,
+  "safety_violations": 0,
+  "recovery_rate_where_recovery_permitted": 0.6195
+ },
+ "scoped-store+UNSAFE_GUESS": {
+  "attempts": 270,
+  "recovered": 78,
+  "explicit_failures": 192,
+  "incorrect_associations": 13,
+  "safety_violations": 13,
+  "recovery_rate_where_recovery_permitted": 0.6903
+ }
+}

@@ -1,0 +1,41 @@
+F....................................................................... [ 97%]
+..                                                                       [100%]
+=================================== FAILURES ===================================
+__________ test_a_b_sent_survives_restart_with_identity[global-store] __________
+
+cluster = <restart_harness.Cluster object at 0x103895280>
+
+    @pytest.mark.parametrize("cluster", ALL, indirect=True)
+    def test_a_b_sent_survives_restart_with_identity(cluster):
+        c = cluster
+>       p1, d = crash_p1(c, "tool")
+                ^^^^^^^^^^^^^^^^^^^
+
+../../../src/repo/tests/test_process_restart.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../src/repo/tests/test_process_restart.py:44: in crash_p1
+    assert c.ctl("wait_entered", gate=gate)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../src/repo/tests/restart_harness.py:426: in ctl
+    with Client(self.address, family="AF_UNIX",
+../../../env/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/multiprocessing/connection.py:519: in Client
+    c = SocketClient(address)
+        ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+address = '/tmp/apr-rbl85nts/s'
+
+    def SocketClient(address):
+        '''
+        Return a connection object connected to the socket given by `address`
+        '''
+        family = address_type(address)
+        with socket.socket( getattr(socket, family) ) as s:
+            s.setblocking(True)
+>           s.connect(address)
+E           ConnectionRefusedError: [Errno 61] Connection refused
+
+../../../env/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/multiprocessing/connection.py:647: ConnectionRefusedError
+=========================== short test summary info ============================
+FAILED ../../../src/repo/tests/test_process_restart.py::test_a_b_sent_survives_restart_with_identity[global-store]
+1 failed, 73 passed in 16.15s

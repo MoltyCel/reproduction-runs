@@ -1,0 +1,525 @@
+{
+  "_config": {
+    "dialogs_per_run": 90,
+    "faults": [
+      "none",
+      "mapping_deleted",
+      "mapping_tampered",
+      "ticket_lost",
+      "foreign_ticket",
+      "revoked",
+      "expired",
+      "terminated",
+      "stale_replay",
+      "wrong_principal"
+    ],
+    "must_fail": [
+      "expired",
+      "revoked",
+      "stale_replay",
+      "terminated",
+      "wrong_principal"
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ]
+  },
+  "global-endpoint": {
+    "attempts": 270,
+    "by_fault": {
+      "expired": {
+        "codes": {
+          "AUTHZ_EXPIRED": 31
+        },
+        "n": 31
+      },
+      "foreign_ticket": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "mapping_deleted": {
+        "codes": {
+          "OK": 19
+        },
+        "n": 19
+      },
+      "mapping_tampered": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "none": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "revoked": {
+        "codes": {
+          "AUTHZ_REVOKED": 24
+        },
+        "n": 24
+      },
+      "stale_replay": {
+        "codes": {
+          "STALE_REFERENCE": 37
+        },
+        "n": 37
+      },
+      "terminated": {
+        "codes": {
+          "DIALOG_TERMINATED": 35
+        },
+        "n": 35
+      },
+      "ticket_lost": {
+        "codes": {
+          "OK": 22
+        },
+        "n": 22
+      },
+      "wrong_principal": {
+        "codes": {
+          "PRINCIPAL_MISMATCH": 30
+        },
+        "n": 30
+      }
+    },
+    "explicit_failures": 157,
+    "incorrect_associations": 0,
+    "recovered": 113,
+    "recovery_rate_where_recovery_permitted": 1.0,
+    "safety_violations": 0
+  },
+  "global-store": {
+    "attempts": 270,
+    "by_fault": {
+      "expired": {
+        "codes": {
+          "AUTHZ_EXPIRED": 31
+        },
+        "n": 31
+      },
+      "foreign_ticket": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "mapping_deleted": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 19
+        },
+        "n": 19
+      },
+      "mapping_tampered": {
+        "codes": {
+          "MAPPING_INTEGRITY_FAILURE": 24
+        },
+        "n": 24
+      },
+      "none": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "revoked": {
+        "codes": {
+          "AUTHZ_REVOKED": 24
+        },
+        "n": 24
+      },
+      "stale_replay": {
+        "codes": {
+          "STALE_REFERENCE": 37
+        },
+        "n": 37
+      },
+      "terminated": {
+        "codes": {
+          "DIALOG_TERMINATED": 35
+        },
+        "n": 35
+      },
+      "ticket_lost": {
+        "codes": {
+          "OK": 22
+        },
+        "n": 22
+      },
+      "wrong_principal": {
+        "codes": {
+          "PRINCIPAL_MISMATCH": 30
+        },
+        "n": 30
+      }
+    },
+    "explicit_failures": 200,
+    "incorrect_associations": 0,
+    "recovered": 70,
+    "recovery_rate_where_recovery_permitted": 0.6195,
+    "safety_violations": 0
+  },
+  "scoped-endpoint-medticket": {
+    "attempts": 270,
+    "by_fault": {
+      "expired": {
+        "codes": {
+          "AUTHZ_EXPIRED": 31
+        },
+        "n": 31
+      },
+      "foreign_ticket": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 3,
+          "TICKET_MISMATCH": 21
+        },
+        "n": 24
+      },
+      "mapping_deleted": {
+        "codes": {
+          "OK": 19
+        },
+        "n": 19
+      },
+      "mapping_tampered": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "none": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "revoked": {
+        "codes": {
+          "AUTHZ_REVOKED": 24
+        },
+        "n": 24
+      },
+      "stale_replay": {
+        "codes": {
+          "STALE_REFERENCE": 37
+        },
+        "n": 37
+      },
+      "terminated": {
+        "codes": {
+          "DIALOG_TERMINATED": 35
+        },
+        "n": 35
+      },
+      "ticket_lost": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 22
+        },
+        "n": 22
+      },
+      "wrong_principal": {
+        "codes": {
+          "PRINCIPAL_MISMATCH": 30
+        },
+        "n": 30
+      }
+    },
+    "explicit_failures": 203,
+    "incorrect_associations": 0,
+    "recovered": 67,
+    "recovery_rate_where_recovery_permitted": 0.5929,
+    "safety_violations": 0
+  },
+  "scoped-endpoint-noticket": {
+    "attempts": 270,
+    "by_fault": {
+      "expired": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 31
+        },
+        "n": 31
+      },
+      "foreign_ticket": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 24
+        },
+        "n": 24
+      },
+      "mapping_deleted": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 19
+        },
+        "n": 19
+      },
+      "mapping_tampered": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 24
+        },
+        "n": 24
+      },
+      "none": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 24
+        },
+        "n": 24
+      },
+      "revoked": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 24
+        },
+        "n": 24
+      },
+      "stale_replay": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 37
+        },
+        "n": 37
+      },
+      "terminated": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 35
+        },
+        "n": 35
+      },
+      "ticket_lost": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 22
+        },
+        "n": 22
+      },
+      "wrong_principal": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 30
+        },
+        "n": 30
+      }
+    },
+    "explicit_failures": 270,
+    "incorrect_associations": 0,
+    "recovered": 0,
+    "recovery_rate_where_recovery_permitted": 0.0,
+    "safety_violations": 0
+  },
+  "scoped-endpoint-ticket": {
+    "attempts": 270,
+    "by_fault": {
+      "expired": {
+        "codes": {
+          "AUTHZ_EXPIRED": 31
+        },
+        "n": 31
+      },
+      "foreign_ticket": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 3,
+          "TICKET_MISMATCH": 21
+        },
+        "n": 24
+      },
+      "mapping_deleted": {
+        "codes": {
+          "OK": 19
+        },
+        "n": 19
+      },
+      "mapping_tampered": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "none": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "revoked": {
+        "codes": {
+          "AUTHZ_REVOKED": 24
+        },
+        "n": 24
+      },
+      "stale_replay": {
+        "codes": {
+          "STALE_REFERENCE": 37
+        },
+        "n": 37
+      },
+      "terminated": {
+        "codes": {
+          "DIALOG_TERMINATED": 35
+        },
+        "n": 35
+      },
+      "ticket_lost": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 22
+        },
+        "n": 22
+      },
+      "wrong_principal": {
+        "codes": {
+          "PRINCIPAL_MISMATCH": 30
+        },
+        "n": 30
+      }
+    },
+    "explicit_failures": 203,
+    "incorrect_associations": 0,
+    "recovered": 67,
+    "recovery_rate_where_recovery_permitted": 0.5929,
+    "safety_violations": 0
+  },
+  "scoped-store": {
+    "attempts": 270,
+    "by_fault": {
+      "expired": {
+        "codes": {
+          "AUTHZ_EXPIRED": 31
+        },
+        "n": 31
+      },
+      "foreign_ticket": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "mapping_deleted": {
+        "codes": {
+          "MAPPING_NOT_FOUND": 19
+        },
+        "n": 19
+      },
+      "mapping_tampered": {
+        "codes": {
+          "MAPPING_INTEGRITY_FAILURE": 24
+        },
+        "n": 24
+      },
+      "none": {
+        "codes": {
+          "OK": 24
+        },
+        "n": 24
+      },
+      "revoked": {
+        "codes": {
+          "AUTHZ_REVOKED": 24
+        },
+        "n": 24
+      },
+      "stale_replay": {
+        "codes": {
+          "STALE_REFERENCE": 37
+        },
+        "n": 37
+      },
+      "terminated": {
+        "codes": {
+          "DIALOG_TERMINATED": 35
+        },
+        "n": 35
+      },
+      "ticket_lost": {
+        "codes": {
+          "OK": 22
+        },
+        "n": 22
+      },
+      "wrong_principal": {
+        "codes": {
+          "PRINCIPAL_MISMATCH": 30
+        },
+        "n": 30
+      }
+    },
+    "explicit_failures": 200,
+    "incorrect_associations": 0,
+    "recovered": 70,
+    "recovery_rate_where_recovery_permitted": 0.6195,
+    "safety_violations": 0
+  },
+  "scoped-store+UNSAFE_GUESS": {
+    "attempts": 270,
+    "by_fault": {
+      "expired": {
+        "codes": {
+          "AUTHZ_EXPIRED": 31
+        },
+        "n": 31
+      },
+      "foreign_ticket": {
+        "codes": {
+          "OK": 22,
+          "STALE_REFERENCE": 2
+        },
+        "n": 24
+      },
+      "mapping_deleted": {
+        "codes": {
+          "MAPPING_INTEGRITY_FAILURE": 6,
+          "OK": 13
+        },
+        "n": 19
+      },
+      "mapping_tampered": {
+        "codes": {
+          "MAPPING_INTEGRITY_FAILURE": 24
+        },
+        "n": 24
+      },
+      "none": {
+        "codes": {
+          "OK": 22,
+          "STALE_REFERENCE": 2
+        },
+        "n": 24
+      },
+      "revoked": {
+        "codes": {
+          "AUTHZ_REVOKED": 24
+        },
+        "n": 24
+      },
+      "stale_replay": {
+        "codes": {
+          "STALE_REFERENCE": 37
+        },
+        "n": 37
+      },
+      "terminated": {
+        "codes": {
+          "DIALOG_TERMINATED": 35
+        },
+        "n": 35
+      },
+      "ticket_lost": {
+        "codes": {
+          "OK": 21,
+          "STALE_REFERENCE": 1
+        },
+        "n": 22
+      },
+      "wrong_principal": {
+        "codes": {
+          "PRINCIPAL_MISMATCH": 30
+        },
+        "n": 30
+      }
+    },
+    "explicit_failures": 192,
+    "incorrect_associations": 13,
+    "recovered": 78,
+    "recovery_rate_where_recovery_permitted": 0.6903,
+    "safety_violations": 13
+  }
+}
