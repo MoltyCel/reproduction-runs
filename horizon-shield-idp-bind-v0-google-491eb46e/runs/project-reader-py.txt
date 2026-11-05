@@ -1,0 +1,7 @@
+reader (python):
+  binding A: accepted [] ["bearer_only"]
+  binding B: accepted [] ["bearer_only"]
+  NENRIN grant + receipt: accepted [] ["evidence_bound_unchecked", "no_delegation_observations"]
+
+established: https://accounts.google.com / 113892689306592625656 authorized a2a.invoke /invoices/pay; https://accounts.google.com / 115692724741532430986 executed it; executed == authorized, receipt bound to the grant
+exit=0

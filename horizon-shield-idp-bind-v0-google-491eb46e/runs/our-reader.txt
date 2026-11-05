@@ -1,0 +1,20 @@
+== controls
+positive control RFC 8032 TEST 1 verifies: True; same signature over another message verifies: False
+musubi-canonical-v0 vectors reproduced by our canonicalizer: 10/10
+== google-2026-10-15 (our reader)
+binding_a: accepted refusals=- findings=['bearer_only'] token_sha256=6d7d9debcb293a3bdb75118c69e66614ba6ae1ea6db91f91a2ce7ff299c93c6e token_len=786 kid=943a3a5d7d919625a454e489b75c29adab57acba token_window_s=3600
+binding_b: accepted refusals=- findings=['bearer_only'] token_sha256=fc7701f74fc6650f9a816a47afc6056a7b9789731ff80fd7492f404c9f45a15f token_len=786 kid=943a3a5d7d919625a454e489b75c29adab57acba token_window_s=3600
+grant: accepted refusals=-
+receipt: accepted refusals=-
+pair: consistent refusals=-
+keys: grant.caller_id == binding_a.actor_id: True
+keys: grant.provider_id == binding_b.actor_id: True
+keys: receipt.provider_id == binding_b.actor_id: True
+matches the stated expectation: True
+== negative controls (altered copies, must be refused)
+token signature segment altered -> ['binding_recompute_mismatch', 'actor_sig_invalid', 'token_digest_mismatch', 'idp_signature_invalid']
+binding nonce altered -> ['binding_recompute_mismatch', 'actor_sig_invalid']
+jwks digest altered -> ['jwks_digest_mismatch']
+grant action target altered -> grant ['recompute_mismatch', 'caller_sig_invalid'], pair ['action_mismatch']
+all negative controls refused: True
+exit=0

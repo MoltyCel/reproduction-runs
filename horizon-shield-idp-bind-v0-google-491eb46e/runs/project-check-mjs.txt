@@ -1,0 +1,9 @@
+withheld: entra-2026-10-15/binding_a.json (sha256 a46f72a0ded9eb92...)
+withheld: entra-2026-10-15/binding_b.json (sha256 7c006cf9a912b411...)
+google-2026-10-15: established
+  issuer https://accounts.google.com, alg RS256, kid 943a3a5d7d919625a454e489b75c29adab57acba, jwks sha256 5488d26fa9780e31
+  binding A accepted [] ["bearer_only"]  subject 113892689306592625656
+  binding B accepted [] ["bearer_only"]  subject 115692724741532430986
+  grant + receipt accepted [] ["evidence_bound_unchecked","no_delegation_observations"]  keys line up: true
+entra-2026-10-15: grant + receipt accepted [] ["evidence_bound_unchecked","no_delegation_observations"]; bindings withheld, provider subjects not checked here
+exit=0

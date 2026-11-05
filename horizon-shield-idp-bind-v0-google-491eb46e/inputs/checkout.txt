@@ -1,0 +1,6 @@
+repository: https://github.com/ogasurfproject-jpg/horizon-shield.git
+pin_as_given: 491eb46e44578ea096e61cc7de78a773aa3c7dcc
+resolved_commit: 491eb46e44578ea096e61cc7de78a773aa3c7dcc
+tree: 9c0a5e05fb49c2f7e32fe53342bb36c994442dfc
+commit_date: 2026-10-15T23:09:32+09:00
+default_branch_head_at_run: b75bf4041960d7ee925fe6e953b8418e363d1094

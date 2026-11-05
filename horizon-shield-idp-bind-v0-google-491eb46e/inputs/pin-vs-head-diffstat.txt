@@ -1,0 +1,3 @@
+ workers/hs-ledger/nenrin/idp-bind-v0/README.md     |  5 ---
+ .../nenrin/idp-bind-v0/trusted_identity.mjs        | 36 ----------------------
+ 2 files changed, 41 deletions(-)

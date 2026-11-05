@@ -1,0 +1,4 @@
+google-2026-10-15/binding_a.json: OK
+google-2026-10-15/binding_b.json: OK
+google-2026-10-15/bundle.json: OK
+google-2026-10-15/jwks.json: OK
