@@ -1,0 +1,18 @@
+ok   exhibit-2-random-nonce               [real     ] UNRESOLVED   execution_policy_not_committed,payment_does_not_carry_verdict
+ok   exhibit-3-nonce-is-decision-ref      [real     ] UNRESOLVED   execution_policy_not_committed
+ok   s1-approve-carried-policy-permits    [synthetic] AUTHORIZED   
+ok   s2-reject-carried-as-nonce           [synthetic] UNAUTHORIZED executed_on_verdict_outside_policy
+ok   s3-random-nonce-policy-permits       [synthetic] UNRESOLVED   payment_does_not_carry_verdict
+ok   n1-args-amount-altered               [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n2-verdict-content-altered           [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n3-policy-added-after-verdict        [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n4-verdict-signed-by-another-key     [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n5-receipt-unavailable               [negative ] UNRESOLVED   evidence_unavailable
+10/10 cases match
+KILLED M1_temporal_order_as_binding     by exhibit-2-random-nonce, s3-random-nonce-policy-permits
+KILLED M2_binding_alone_authorizes      by exhibit-2-random-nonce, exhibit-3-nonce-is-decision-ref
+KILLED M3_skip_proof_check              by n4-verdict-signed-by-another-key
+KILLED M4_unavailable_is_rejection      by n5-receipt-unavailable
+KILLED M5_trust_args_without_hash       by n3-policy-added-after-verdict
+5/5 mutants killed
+exit=0

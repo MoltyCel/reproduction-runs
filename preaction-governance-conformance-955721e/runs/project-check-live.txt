@@ -1,0 +1,14 @@
+ok   live re-read 0xd105a8f529... block 52339972: receipt and block hash equal the pinned fixture
+ok   live re-read 0x2afb35e24a... block 52345856: receipt and block hash equal the pinned fixture
+ok   exhibit-2-random-nonce               [real     ] UNRESOLVED   execution_policy_not_committed,payment_does_not_carry_verdict
+ok   exhibit-3-nonce-is-decision-ref      [real     ] UNRESOLVED   execution_policy_not_committed
+ok   s1-approve-carried-policy-permits    [synthetic] AUTHORIZED   
+ok   s2-reject-carried-as-nonce           [synthetic] UNAUTHORIZED executed_on_verdict_outside_policy
+ok   s3-random-nonce-policy-permits       [synthetic] UNRESOLVED   payment_does_not_carry_verdict
+ok   n1-args-amount-altered               [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n2-verdict-content-altered           [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n3-policy-added-after-verdict        [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n4-verdict-signed-by-another-key     [negative ] UNRESOLVED   verdict_does_not_cover_payment
+ok   n5-receipt-unavailable               [negative ] UNRESOLVED   evidence_unavailable
+10/10 cases match
+exit=0

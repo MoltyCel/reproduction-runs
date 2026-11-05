@@ -1,0 +1,6 @@
+repository: https://github.com/babyblueviper1/preaction-governance-conformance.git
+pin_as_given: 955721e77059a4d51db047ed1b09db4396cf486f
+resolved_commit: 955721e77059a4d51db047ed1b09db4396cf486f
+tree: 97446aa927c931ed97e9d4b6c189c2b1aaac16ab
+commit_date: 2026-10-15T20:51:42Z
+default_branch_head_at_run: cd2c319e22834632da4e55b550f3ff11ca7945f0

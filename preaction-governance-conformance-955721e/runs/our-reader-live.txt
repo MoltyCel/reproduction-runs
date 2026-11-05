@@ -1,0 +1,20 @@
+topic Transfer          0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+topic AuthorizationUsed 0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5
+agree    exhibit-2-random-nonce               real      expected=UNRESOLVED['execution_policy_not_committed', 'payment_does_not_carry_verdict'] got=UNRESOLVED['payment_does_not_carry_verdict', 'execution_policy_not_committed'] edges={'covers': True, 'carried': False, 'policy': False}
+agree    exhibit-3-nonce-is-decision-ref      real      expected=UNRESOLVED['execution_policy_not_committed'] got=UNRESOLVED['execution_policy_not_committed'] edges={'covers': True, 'carried': True, 'policy': False}
+agree    s1-approve-carried-policy-permits    synthetic expected=AUTHORIZED got=AUTHORIZED edges={'covers': True, 'carried': True, 'policy': True}
+agree    s2-reject-carried-as-nonce           synthetic expected=UNAUTHORIZED['executed_on_verdict_outside_policy'] got=UNAUTHORIZED['executed_on_verdict_outside_policy'] edges={'covers': True, 'carried': True, 'policy': True}
+agree    s3-random-nonce-policy-permits       synthetic expected=UNRESOLVED['payment_does_not_carry_verdict'] got=UNRESOLVED['payment_does_not_carry_verdict'] edges={'covers': True, 'carried': False, 'policy': True}
+DISAGREE n1-args-amount-altered               negative (altered copy of exhibit-3-nonce-is-decision-ref) expected=UNRESOLVED['verdict_does_not_cover_payment'] got=UNRESOLVED['verdict_does_not_cover_payment', 'execution_policy_not_committed'] edges={'covers': False, 'carried': True, 'policy': False} covers_failed=['args_hash', 'receipt_transfer']
+DISAGREE n2-verdict-content-altered           negative (altered copy of exhibit-3-nonce-is-decision-ref) expected=UNRESOLVED['verdict_does_not_cover_payment'] got=UNRESOLVED['verdict_does_not_cover_payment', 'execution_policy_not_committed'] edges={'covers': False, 'carried': True, 'policy': False} covers_failed=['nip01_id', 'decision_ref']
+agree    n3-policy-added-after-verdict        negative (altered copy of exhibit-3-nonce-is-decision-ref) expected=UNRESOLVED['verdict_does_not_cover_payment'] got=UNRESOLVED['verdict_does_not_cover_payment'] edges={'covers': False, 'carried': True, 'policy': True} covers_failed=['args_hash']
+DISAGREE n4-verdict-signed-by-another-key     negative (altered copy of exhibit-3-nonce-is-decision-ref) expected=UNRESOLVED['verdict_does_not_cover_payment'] got=UNRESOLVED['verdict_does_not_cover_payment', 'execution_policy_not_committed'] edges={'covers': False, 'carried': True, 'policy': False} covers_failed=['signature']
+agree    n5-receipt-unavailable               negative (altered copy of exhibit-3-nonce-is-decision-ref) expected=UNRESOLVED['evidence_unavailable'] got=UNRESOLVED['evidence_unavailable'] edges={}
+7/10 cases agree on outcome and reasons
+positive control s1-approve-carried-policy-permits: PASSED
+== live re-read from https://mainnet.base.org
+exhibit-2-random-nonce: receipt found; status=0x1 block=52339972 blockHash_equal_pinned=True block_header_hash_equal=True timestamp_equal=True logs_equal_pinned=True
+  outcome from live logs: UNRESOLVED ['payment_does_not_carry_verdict', 'execution_policy_not_committed']
+exhibit-3-nonce-is-decision-ref: receipt found; status=0x1 block=52345856 blockHash_equal_pinned=True block_header_hash_equal=True timestamp_equal=True logs_equal_pinned=True
+  outcome from live logs: UNRESOLVED ['execution_policy_not_committed']
+exit=1

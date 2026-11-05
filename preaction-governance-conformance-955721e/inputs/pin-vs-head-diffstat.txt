@@ -1,0 +1,1 @@
+(empty above = no change under examples/resolution-payment-pair-v0 between pin and default-branch head)
