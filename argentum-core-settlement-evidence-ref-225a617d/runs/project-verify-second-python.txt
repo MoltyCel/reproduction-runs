@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/mt-runs/repro-177/_work/src/argentum-core/examples/conformance/settlement-evidence-ref/verify.py", line 55, in <module>
+    def check_matches_offer(artifact: dict, referenced_offer: dict | None) -> bool:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+exit=1

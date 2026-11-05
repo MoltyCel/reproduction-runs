@@ -1,0 +1,15 @@
+== vectors (our reader)
+agree    settlement-matched-001                   expected=PASS got=PASS digest=match checks=same failing=-
+agree    facilitator-assertion-only-001           expected=FAIL got=FAIL digest=match checks=same failing=['ledger_recomputed', 'debit_credit_paired', 'matches_offer']
+agree    settlement-amount-mismatch-vs-offer-001  expected=FAIL got=FAIL digest=match checks=same failing=['matches_offer']
+agree    settlement-transaction-missing-001       expected=FAIL got=FAIL digest=match checks=same failing=['transaction_present']
+4/4 agree on verdict and all four checks
+positive control settlement-matched-001: PASSED
+== inline artifact (comment 6202120269)
+settlement_evidence_ref = f909081a79e81d6f5b3f914cf74c96cb51c764722bad012278d70b31f582c8a1
+expected                = f909081a79e81d6f5b3f914cf74c96cb51c764722bad012278d70b31f582c8a1  -> match
+same artifact as vector: ['settlement-transaction-missing-001']
+transaction_present: False
+== canonicalizer control (RFC 8785 section 3.2.3 sorting example)
+our order matches RFC 8785 example: True; code-point order would match: False
+exit=0

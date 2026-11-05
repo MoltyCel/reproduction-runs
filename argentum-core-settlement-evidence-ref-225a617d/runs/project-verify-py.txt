@@ -1,0 +1,12 @@
+settlement-evidence-ref-v1 conformance — 4 vectors
+
+  ✓ [PASS] settlement-matched-001
+  ✓ [PASS] facilitator-assertion-only-001
+         correctly rejected: ledger_recomputed: false — payer_debit/payee_credit not independently confirmed against the rail, only a facilitator assertion
+  ✓ [PASS] settlement-amount-mismatch-vs-offer-001
+         correctly rejected: matches_offer: false — settled amount/asset/payee diverge from offer
+  ✓ [PASS] settlement-transaction-missing-001
+         correctly rejected: transaction_present: false — settlement_artifact.transaction is missing or empty
+
+4/4 passed
+exit=0

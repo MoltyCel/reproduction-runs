@@ -1,0 +1,6 @@
+repository: https://github.com/giskard09/argentum-core.git
+pin_as_given: 225a617d4b21e47ed4f37d06177275f76dfb7e46
+resolved_commit: 225a617d4b21e47ed4f37d06177275f76dfb7e46
+tree: 7c183225339f5d7bf3f69936b57342f46a0a9f55
+commit_date: 2026-10-15T14:54:48-03:00
+default_branch_head_at_run: d39821eee7ad9a47cc0a4137da20ca1fd9f40887

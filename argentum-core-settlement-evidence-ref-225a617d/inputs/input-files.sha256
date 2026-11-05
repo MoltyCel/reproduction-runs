@@ -1,0 +1,3 @@
+a4e91459d32d8d330b0e9945be6a6b3cbdc643218c92348f57f4a60e664f0945  docs/spec/settlement-evidence-ref.md
+88ae54b5d60675db2ffbd3b5593af2450ff0e6106e8a60ca52adf38ec5825155  examples/conformance/settlement-evidence-ref/vectors.json
+e23f704ce3a63b89b857fcaf055aa571c73cb42a8afaa54de2b5ca6c6a6ee40e  examples/conformance/settlement-evidence-ref/verify.py
