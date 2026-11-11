@@ -1,0 +1,24 @@
+{
+  "format": "reproduction-run/1",
+  "subject": "draft-wright-verdict-record-02 test vectors",
+  "draft": "draft-wright-verdict-record-02",
+  "draft_url": "https://www.ietf.org/archive/id/draft-wright-verdict-record-02.txt",
+  "draft_sha256": "91ad251baca9537d5764288dffabe214fe433cea11e69f7ea987baea12622b64",
+  "vectors_repository": "https://github.com/diggertydog/verdict-record-test-vectors",
+  "vectors_commit": "d302e24d2114f0a397496cdec37e9fac8a14816d",
+  "vectors_cases": 71,
+  "receiver_provenance": "clean_room",
+  "receiver_provenance_meaning": "our checker was written from the text of draft-wright-verdict-record-02 and the vector-format, test-only-format and test-only-rule sections of the vectors' README (lines 1-82 at the pin), without the source code of the vectors repository",
+  "checker": "checker/vrc.py",
+  "checker_sha256": "325ae1377ba1da24840cddac13de7699d67dd2605c58109f00f35ffe339eb99c",
+  "policy_appendix_a2": {
+    "judgement_kinds": [],
+    "formats": [
+      "https://datatracker.ietf.org/doc/draft-durga-agenttrust-trace-verification/"
+    ],
+    "max_depth": 0,
+    "inputs_from_evidence_only": true
+  },
+  "policy_appendix_a2_sha256": "f8f3653081eeaff344cce03a0d9c1a73a263502c6e672315f2f93f3823bed0e5",
+  "policy_vectors": "each vector supplies its own policy; our digest of each is in runs/ours-vectors.jsonl (report.policy_sha256) and equals the vector's policy_sha256 in 71 of 71"
+}

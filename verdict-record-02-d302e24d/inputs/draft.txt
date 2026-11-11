@@ -1,0 +1,2 @@
+url: https://www.ietf.org/archive/id/draft-wright-verdict-record-02.txt
+sha256: 91ad251baca9537d5764288dffabe214fe433cea11e69f7ea987baea12622b64
