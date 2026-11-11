@@ -1,0 +1,7 @@
+cases 71; state agrees 69; all three step results agree 68; cases with any field differing 3
+c11-claim-ref-not-in-evidence                body_inputs_read ours=[] reference=["min", "value"]; named step ours=null reference="FAIL at step 2"; step 1 ours=null reference="PASS"; step 2 ours=null reference="FAIL"; step 2 entries not relied on ours=null reference=[]; step 3 ours=null reference="PASS"
+g15-policy-unknown-member                    named step ours=null reference="PASS"; state ours="no verdict" reference="released"; step 1 ours=null reference="PASS"; step 2 ours=null reference="PASS"; step 2 entries not relied on ours=null reference=[]; step 3 ours=null reference="PASS"
+g16-policy-citation-depth                    named step ours=null reference="PASS"; state ours="no verdict" reference="released"; step 1 ours=null reference="PASS"; step 2 ours=null reference="PASS"; step 2 entries not relied on ours=null reference=[]; step 3 ours=null reference="PASS"
+recount: the reference report differs from the vector's expected answer (state, and steps where given) in 0 cases: 
+ours differs from the vector's expected answer in 2 cases: g15-policy-unknown-member, g16-policy-citation-depth
+exit=0

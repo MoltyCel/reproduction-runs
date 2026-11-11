@@ -1,0 +1,1156 @@
+{
+ "cases": 71,
+ "cases_with_any_difference": 3,
+ "differences": [
+  {
+   "case": "c11-claim-ref-not-in-evidence",
+   "evidence_items_sha256": [
+    "e3bf3a3fcd5b95e78cf1303f9ee301d97032271dd218f038e1a2c8265bd1d56d"
+   ],
+   "fields": {
+    "body_inputs_read": {
+     "ours": [],
+     "reference": [
+      "min",
+      "value"
+     ]
+    },
+    "named step": {
+     "ours": null,
+     "reference": "FAIL at step 2"
+    },
+    "step 1": {
+     "ours": null,
+     "reference": "PASS"
+    },
+    "step 2": {
+     "ours": null,
+     "reference": "FAIL"
+    },
+    "step 2 entries not relied on": {
+     "ours": null,
+     "reference": []
+    },
+    "step 3": {
+     "ours": null,
+     "reference": "PASS"
+    }
+   },
+   "hold": [],
+   "ours_wording": {
+    "refused_before_steps": "2.3: body.claim.ref does not also appear in evidence"
+   },
+   "policy": {
+    "formats": [
+     "urn:example:verdict-record:format:opaque",
+     "urn:example:verdict-record:format:never-verifies",
+     "verdict-record/1"
+    ],
+    "judgement_kinds": [
+     "model-decision"
+    ],
+    "max_depth": 2
+   },
+   "record_bytes": "{\"act_time\":\"2026-11-01T10:00:00.000000Z\",\"actor\":{\"id\":\"runner-1\",\"model\":\"none\",\"model_version\":\"0\",\"type\":\"system\"},\"body\":{\"claim\":{\"ref\":{\"format\":\"urn:example:verdict-record:format:opaque\",\"sha256\":\"a35bef50834cbeb199528f8480fc77d41f2caf9059f74708cc9edb35c9964e82\"}},\"measured\":7,\"threshold\":5},\"check\":{\"inputs\":{\"min\":\"threshold\",\"value\":\"measured\"},\"result\":\"pass\",\"rule\":\"urn:example:verdict-record:rule:at-least\"},\"evidence\":[{\"format\":\"urn:example:verdict-record:format:opaque\",\"sha256\":\"e3bf3a3fcd5b95e78cf1303f9ee301d97032271dd218f038e1a2c8265bd1d56d\"}],\"key\":\"k-0001\",\"kind\":\"check-run\",\"supersedes\":null,\"v\":\"verdict-record/1\",\"version\":1,\"writer\":\"issuer.example\"}",
+   "record_sha256": "6954663665c1594e7268072c24c056b12341ab48f972799bad6b403722a8c035",
+   "reference_wording": {
+    "not_relied_on": [],
+    "reasons": {
+     "2": "body.claim.ref does not appear in evidence"
+    },
+    "summary": "state refused; step 1 PASS; step 2 FAIL; step 3 PASS"
+   }
+  },
+  {
+   "case": "g15-policy-unknown-member",
+   "evidence_items_sha256": [
+    "f3ce37bb6a23d21242dfb3e6c303d8a717a91c0aaca0d1ec5be4b6e56b064a51"
+   ],
+   "fields": {
+    "named step": {
+     "ours": null,
+     "reference": "PASS"
+    },
+    "state": {
+     "ours": "no verdict",
+     "reference": "released"
+    },
+    "step 1": {
+     "ours": null,
+     "reference": "PASS"
+    },
+    "step 2": {
+     "ours": null,
+     "reference": "PASS"
+    },
+    "step 2 entries not relied on": {
+     "ours": null,
+     "reference": []
+    },
+    "step 3": {
+     "ours": null,
+     "reference": "PASS"
+    }
+   },
+   "hold": [],
+   "ours_wording": {
+    "policy_invalid": "policy states a member this checker does not know: max_evidence_age_seconds"
+   },
+   "policy": {
+    "formats": [
+     "urn:example:verdict-record:format:opaque",
+     "urn:example:verdict-record:format:never-verifies",
+     "verdict-record/1"
+    ],
+    "judgement_kinds": [
+     "model-decision"
+    ],
+    "max_depth": 2,
+    "max_evidence_age_seconds": 3600
+   },
+   "record_bytes": "{\"act_time\":\"2026-11-01T10:00:00.000000Z\",\"actor\":{\"id\":\"runner-1\",\"model\":\"none\",\"model_version\":\"0\",\"type\":\"system\"},\"body\":{\"claim\":{\"text\":\"The value n of the cited item is at least its value m.\"}},\"check\":{\"inputs\":{\"min\":{\"evidence\":0,\"pointer\":\"/m\"},\"value\":{\"evidence\":0,\"pointer\":\"/n\"}},\"result\":\"pass\",\"rule\":\"urn:example:verdict-record:rule:at-least\"},\"evidence\":[{\"format\":\"urn:example:verdict-record:format:opaque\",\"sha256\":\"f3ce37bb6a23d21242dfb3e6c303d8a717a91c0aaca0d1ec5be4b6e56b064a51\"}],\"key\":\"k-0002\",\"kind\":\"check-run\",\"supersedes\":null,\"v\":\"verdict-record/1\",\"version\":1,\"writer\":\"issuer.example\"}",
+   "record_sha256": "62e2dc0263ed14b51495d0abe76b430209d3231018e2622d68226e6f6af948d8",
+   "reference_wording": {
+    "not_relied_on": [],
+    "reasons": {},
+    "summary": "state released; step 1 PASS; step 2 PASS; step 3 PASS"
+   }
+  },
+  {
+   "case": "g16-policy-citation-depth",
+   "evidence_items_sha256": [
+    "f3ce37bb6a23d21242dfb3e6c303d8a717a91c0aaca0d1ec5be4b6e56b064a51"
+   ],
+   "fields": {
+    "named step": {
+     "ours": null,
+     "reference": "PASS"
+    },
+    "state": {
+     "ours": "no verdict",
+     "reference": "released"
+    },
+    "step 1": {
+     "ours": null,
+     "reference": "PASS"
+    },
+    "step 2": {
+     "ours": null,
+     "reference": "PASS"
+    },
+    "step 2 entries not relied on": {
+     "ours": null,
+     "reference": []
+    },
+    "step 3": {
+     "ours": null,
+     "reference": "PASS"
+    }
+   },
+   "hold": [],
+   "ours_wording": {
+    "policy_invalid": "policy states a member this checker does not know: citation_depth"
+   },
+   "policy": {
+    "citation_depth": 0,
+    "formats": [
+     "urn:example:verdict-record:format:opaque"
+    ],
+    "judgement_kinds": [
+     "model-decision"
+    ]
+   },
+   "record_bytes": "{\"act_time\":\"2026-11-01T10:00:00.000000Z\",\"actor\":{\"id\":\"runner-1\",\"model\":\"none\",\"model_version\":\"0\",\"type\":\"system\"},\"body\":{\"claim\":{\"text\":\"The value n of the cited item is at least its value m.\"}},\"check\":{\"inputs\":{\"min\":{\"evidence\":0,\"pointer\":\"/m\"},\"value\":{\"evidence\":0,\"pointer\":\"/n\"}},\"result\":\"pass\",\"rule\":\"urn:example:verdict-record:rule:at-least\"},\"evidence\":[{\"format\":\"urn:example:verdict-record:format:opaque\",\"sha256\":\"f3ce37bb6a23d21242dfb3e6c303d8a717a91c0aaca0d1ec5be4b6e56b064a51\"}],\"key\":\"k-0002\",\"kind\":\"check-run\",\"supersedes\":null,\"v\":\"verdict-record/1\",\"version\":1,\"writer\":\"issuer.example\"}",
+   "record_sha256": "62e2dc0263ed14b51495d0abe76b430209d3231018e2622d68226e6f6af948d8",
+   "reference_wording": {
+    "not_relied_on": [],
+    "reasons": {},
+    "summary": "state released; step 1 PASS; step 2 PASS; step 3 PASS"
+   }
+  }
+ ],
+ "ours_vs_vector_expected": [
+  {
+   "case": "g15-policy-unknown-member",
+   "depends_on_interpretation": "O-2",
+   "expected_state": "released",
+   "expected_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "ours_state": "no verdict",
+   "ours_steps": null
+  },
+  {
+   "case": "g16-policy-citation-depth",
+   "depends_on_interpretation": "O-1",
+   "expected_state": "released",
+   "expected_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "ours_state": "no verdict",
+   "ours_steps": null
+  }
+ ],
+ "reference_vs_vector_expected": [],
+ "rows": [
+  {
+   "case": "a01-baseline-released",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "a02-whitespace",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a03-member-order",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a04-duplicate-member",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a05-byte-order-mark",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a06-fraction",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a07-integer-range",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a08-escaped-non-ascii",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a09-utf8-bytes",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "a10-lone-surrogate",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a11-depth-32",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "a12-depth-33",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a13-unknown-member",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "a14-missing-writer",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "b01-check-missing",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "NOT RUN"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "NOT RUN"
+   }
+  },
+  {
+   "case": "b02-check-no-result",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "NOT RUN"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "NOT RUN"
+   }
+  },
+  {
+   "case": "b03-judgement-kind-not-listed",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "b04-judgement-kind-listed",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c01-evidence-missing",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "FAIL",
+    "3": "PASS"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "FAIL",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c02-entry-extra-member",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "FAIL",
+    "3": "PASS"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "FAIL",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c03-entry-uppercase-hex",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "FAIL",
+    "3": "PASS"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "FAIL",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c04-item-not-held",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c05-format-not-in-policy",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c06-item-does-not-verify",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c07-cites-released-record",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c08-beyond-depth",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c09-cited-bound-later",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c10-cites-refused-record",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c11-claim-ref-not-in-evidence",
+   "differs": [
+    "body_inputs_read",
+    "named step",
+    "step 1",
+    "step 2",
+    "step 2 entries not relied on",
+    "step 3"
+   ],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "FAIL",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "c12-empty-evidence",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "d01-result-mismatch",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "d02-input-wrong-type",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "d03-rule-not-held",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "NOT RUN"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "NOT RUN"
+   }
+  },
+  {
+   "case": "d04-not-run-then-fail",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "d05-rule-false-low",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "e01-invalid-policy",
+   "differs": [],
+   "ours": "no verdict",
+   "ours_steps": null,
+   "reference": "no verdict",
+   "reference_steps": null
+  },
+  {
+   "case": "f01-appendix-a",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g01-bound-pointer-released",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g02-bound-digest-released",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g03-body-inputs-named",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g04-evidence-only-body-input",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "NOT RUN"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "NOT RUN"
+   }
+  },
+  {
+   "case": "g05-evidence-only-bound",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g06-bound-item-not-held",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   }
+  },
+  {
+   "case": "g07-bound-item-not-relied-on",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   }
+  },
+  {
+   "case": "g08-binding-extra-member",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "g09-no-such-evidence-entry",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "g10-pointer-does-not-resolve",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "g11-item-not-json",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "g12-not-run-and-fail",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "g13-bound-input-wrong-type",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "g14-policy-evidence-only-not-boolean",
+   "differs": [],
+   "ours": "no verdict",
+   "ours_steps": null,
+   "reference": "no verdict",
+   "reference_steps": null
+  },
+  {
+   "case": "g15-policy-unknown-member",
+   "differs": [
+    "named step",
+    "state",
+    "step 1",
+    "step 2",
+    "step 2 entries not relied on",
+    "step 3"
+   ],
+   "ours": "no verdict",
+   "ours_steps": null,
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g16-policy-citation-depth",
+   "differs": [
+    "named step",
+    "state",
+    "step 1",
+    "step 2",
+    "step 2 entries not relied on",
+    "step 3"
+   ],
+   "ours": "no verdict",
+   "ours_steps": null,
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g17-policy-two-depths",
+   "differs": [],
+   "ours": "no verdict",
+   "ours_steps": null,
+   "reference": "no verdict",
+   "reference_steps": null
+  },
+  {
+   "case": "g18-step2-names-every-entry",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g19-act-time-form",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g20-version-zero",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g21-supersedes-on-version-1",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g22-version-2-supersedes-null",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g23-version-2-supersedes-digest",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g24-key-empty",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g25-actor-person-with-model",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g26-v-other-value",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g27-check-extra-member",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "FAIL",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "g28-claim-text-and-ref",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g29-body-not-object",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "g30-claim-text-not-string",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": null,
+   "reference": "refused",
+   "reference_steps": null
+  },
+  {
+   "case": "h01-a2-hops-without-signature-released",
+   "differs": [],
+   "ours": "released",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   },
+   "reference": "released",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS"
+   }
+  },
+  {
+   "case": "h02-a2-hops-signature-required-held",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   }
+  },
+  {
+   "case": "h03-a2-child-widened-refused",
+   "differs": [],
+   "ours": "refused",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   },
+   "reference": "refused",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "FAIL"
+   }
+  },
+  {
+   "case": "h04-a2-child-not-held",
+   "differs": [],
+   "ours": "held",
+   "ours_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   },
+   "reference": "held",
+   "reference_steps": {
+    "1": "PASS",
+    "2": "NOT RUN",
+    "3": "NOT RUN"
+   }
+  }
+ ],
+ "state_agrees": 69,
+ "steps_agree": 68
+}

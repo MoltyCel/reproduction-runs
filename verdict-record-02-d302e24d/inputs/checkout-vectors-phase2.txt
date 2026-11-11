@@ -1,0 +1,6 @@
+repository: https://github.com/diggertydog/verdict-record-test-vectors.git
+pin: d302e24d2114f0a397496cdec37e9fac8a14816d
+resolved_commit: d302e24d2114f0a397496cdec37e9fac8a14816d
+tree: a7adcea51ced6f100f35a304fb562e23ed2e2d42
+commit_date: 2026-11-11T11:34:54+01:00
+default_branch_head_at_run: d302e24d2114f0a397496cdec37e9fac8a14816d
